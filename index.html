@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f4f0e7" />
-    <meta name="description" content="Checklist de master set Pokémon TCG em português e extras japoneses." />
-    <meta property="og:title" content="Master Set Pokémon TCG" />
-    <meta property="og:description" content="Sua coleção Pokémon TCG, carta por carta." />
+    <meta name="description" content="Checklist histÃ³rico de master set PokÃ©mon TCG em portuguÃªs, referÃªncias internacionais e extras japoneses." />
+    <meta property="og:title" content="Master Set PokÃ©mon TCG" />
+    <meta property="og:description" content="Sua coleÃ§Ã£o PokÃ©mon TCG, carta por carta." />
     <meta property="og:image" content="https://samuelnahas.github.io/my-master-set/og.png" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Master Set Pokémon TCG" />
-    <meta name="twitter:description" content="Sua coleção Pokémon TCG, carta por carta." />
+    <meta name="twitter:title" content="Master Set PokÃ©mon TCG" />
+    <meta name="twitter:description" content="Sua coleÃ§Ã£o PokÃ©mon TCG, carta por carta." />
     <meta name="twitter:image" content="https://samuelnahas.github.io/my-master-set/og.png" />
-    <title>Master Set Pokémon TCG</title>
+    <title>Master Set PokÃ©mon TCG</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#top" aria-label="Master Set — início"><span class="brand-mark" aria-hidden="true"><i></i></span><span>MASTER SET</span></a>
+      <a class="brand" href="#top" aria-label="Master Set â€” inÃ­cio"><span class="brand-mark" aria-hidden="true"><i></i></span><span>MASTER SET</span></a>
       <div class="header-actions">
         <button class="quiet-action" id="export-button" type="button">Exportar progresso</button>
         <button class="quiet-action" id="import-button" type="button">Importar</button>
-        <span class="avatar" aria-label="Coleção de Samuel">SN</span>
+        <span class="avatar" aria-label="ColeÃ§Ã£o de Samuel">SN</span>
         <input id="import-file" type="file" accept="application/json" hidden />
       </div>
     </header>
@@ -30,71 +30,73 @@
     <main id="top">
       <section class="hero">
         <div class="hero-main">
-          <p class="eyebrow">MINHA COLEÇÃO</p>
+          <p class="eyebrow">MINHA COLEÃ‡ÃƒO</p>
           <h1>Complete o seu<br><em>Master Set.</em></h1>
-          <p class="hero-copy">Todas as impressões e variantes em português dos seus Pokémon favoritos, com uma seleção extra de exclusividades japonesas.</p>
-          <div class="hero-note"><span aria-hidden="true">●</span> Seu progresso fica salvo neste navegador.</div>
+          <p class="hero-copy">ImpressÃµes e variantes em portuguÃªs, cobertura histÃ³rica internacional e uma seleÃ§Ã£o extra de exclusividades japonesas.</p>
+          <div class="hero-note"><span aria-hidden="true">â—</span> Seu progresso fica salvo neste navegador.</div>
         </div>
-        <div class="progress-card" aria-label="Resumo do progresso da coleção">
+        <div class="progress-card" aria-label="Resumo do progresso da coleÃ§Ã£o">
           <span class="progress-kicker">PROGRESSO GERAL</span>
           <strong id="progress-percent">0%</strong>
           <div class="progress-track"><span id="progress-bar" style="width:0%"></span></div>
-          <div class="progress-meta"><span id="owned-total">0 na coleção</span><span id="missing-total">carregando…</span></div>
+          <div class="progress-meta"><span id="owned-total">0 na coleÃ§Ã£o</span><span id="missing-total">carregandoâ€¦</span></div>
         </div>
       </section>
 
-      <section class="stat-strip" aria-label="Estatísticas da coleção">
-        <div><span>CATÁLOGO</span><strong id="stat-total">—</strong><small>variantes</small></div>
+      <section class="stat-strip" aria-label="EstatÃ­sticas da coleÃ§Ã£o">
+        <div><span>CATÃLOGO</span><strong id="stat-total">â€”</strong><small>variantes</small></div>
         <div><span>TENHO</span><strong id="stat-owned">0</strong><small id="stat-owned-percent">0% do total</small></div>
-        <div><span>FALTAM</span><strong id="stat-missing">—</strong><small id="stat-missing-percent">100% do total</small></div>
-        <div><span>POKÉMON</span><strong>9</strong><small>espécies e formas</small></div>
+        <div><span>FALTAM</span><strong id="stat-missing">â€”</strong><small id="stat-missing-percent">100% do total</small></div>
+        <div><span>POKÃ‰MON</span><strong>9</strong><small>espÃ©cies e formas</small></div>
       </section>
 
-      <section class="catalog-nav" aria-label="Navegação do catálogo">
+      <section class="catalog-nav" aria-label="NavegaÃ§Ã£o do catÃ¡logo">
         <div class="language-tabs" role="tablist" aria-label="Idioma das cartas">
-          <button class="active" data-language="PT-BR" role="tab" aria-selected="true"><span>Principal</span> Português BR</button>
-          <button data-language="Japonês" role="tab" aria-selected="false"><span>Extra</span> Japonês <b id="extra-count">—</b></button>
+          <button class="active" data-language="PT-BR" role="tab" aria-selected="true"><span>Principal</span> PortuguÃªs BR</button>
+          <button data-language="Internacional" role="tab" aria-selected="false"><span>HistÃ³rico</span> Internacional <b id="international-count">â€”</b></button>
+          <button data-language="JaponÃªs" role="tab" aria-selected="false"><span>Extra</span> JaponÃªs <b id="extra-count">â€”</b></button>
         </div>
-        <nav class="pokemon-tabs" id="pokemon-tabs" aria-label="Escolha um Pokémon"></nav>
+        <nav class="pokemon-tabs" id="pokemon-tabs" aria-label="Escolha um PokÃ©mon"></nav>
       </section>
 
       <section class="collection-section" aria-labelledby="catalog-title">
         <div class="section-heading">
-          <div><p class="eyebrow" id="catalog-kicker">FICHÁRIO DIGITAL</p><h2 id="catalog-title">Todas as cartas</h2><p class="result-count" id="result-count" aria-live="polite">Carregando catálogo…</p></div>
+          <div><p class="eyebrow" id="catalog-kicker">FICHÃRIO DIGITAL</p><h2 id="catalog-title">Todas as cartas</h2><p class="result-count" id="result-count" aria-live="polite">Carregando catÃ¡logoâ€¦</p></div>
           <div class="view-toggle" role="group" aria-label="Filtrar por status">
             <button class="active" data-status="all">Todas</button><button data-status="missing">Faltantes</button><button data-status="owned">Tenho</button>
           </div>
         </div>
 
         <div class="filter-bar">
-          <label class="search-field"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Buscar carta ou coleção" autocomplete="off" /></label>
+          <label class="search-field"><span aria-hidden="true">âŒ•</span><input id="search-input" type="search" placeholder="Buscar carta ou coleÃ§Ã£o" autocomplete="off" /></label>
           <label><span class="sr-only">Raridade</span><select id="rarity-filter"><option value="all">Todas as raridades</option></select></label>
-          <label><span class="sr-only">Ordenação</span><select id="sort-select"><option value="pokemon">Ordenar por Pokémon</option><option value="set">Ordenar por coleção</option><option value="name">Ordenar por nome</option><option value="missing">Faltantes primeiro</option></select></label>
-          <button class="reset-button" id="reset-button" type="button">Zerar coleção</button>
+          <label><span class="sr-only">OrdenaÃ§Ã£o</span><select id="sort-select"><option value="pokemon">Ordenar por PokÃ©mon</option><option value="set">Ordenar por coleÃ§Ã£o</option><option value="name">Ordenar por nome</option><option value="missing">Faltantes primeiro</option></select></label>
+          <button class="reset-button" id="reset-button" type="button">Zerar coleÃ§Ã£o</button>
         </div>
 
-        <div class="loading-state" id="loading-state"><span class="spinner" aria-hidden="true"></span><p>Organizando o fichário…</p></div>
+        <div class="loading-state" id="loading-state"><span class="spinner" aria-hidden="true"></span><p>Organizando o fichÃ¡rioâ€¦</p></div>
         <div class="card-grid" id="card-grid" aria-live="polite"></div>
-        <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">◇</span><h3>Nenhuma carta por aqui</h3><p>Tente mudar os filtros ou a busca.</p></div>
+        <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">â—‡</span><h3>Nenhuma carta por aqui</h3><p>Tente mudar os filtros ou a busca.</p></div>
         <button class="load-more" id="load-more" type="button" hidden>Mostrar mais cartas</button>
       </section>
 
       <section class="about-extra" id="about-extra">
-        <p class="eyebrow">COMO FUNCIONA A ABA EXTRA</p>
-        <h2>O que só o Japão ganhou.</h2>
-        <p>Esta aba compara as impressões japonesas com o catálogo em português e reúne cartas sem equivalente, raridades diferentes e foils especiais — incluindo Poké Ball e Master Ball.</p>
+        <p class="eyebrow">COMO FUNCIONA O CATÃLOGO</p>
+        <h2>Do primeiro lanÃ§amento Ã s ediÃ§Ãµes especiais.</h2>
+        <p>A aba internacional completa lacunas histÃ³ricas da base PT-BR â€” incluindo a era Diamante & PÃ©rola â€” e a aba japonesa reÃºne cartas sem equivalente, raridades diferentes e foils especiais.</p>
       </section>
     </main>
 
     <footer>
-      <div><strong>MASTER SET</strong><p>Checklist pessoal e não oficial de Pokémon TCG.</p></div>
-      <div class="footer-meta"><span id="updated-at">Base em atualização</span><a href="https://tcgdex.net" target="_blank" rel="noreferrer">Dados e imagens: TCGdex ↗</a></div>
+      <div><strong>MASTER SET</strong><p>Checklist pessoal e nÃ£o oficial de PokÃ©mon TCG.</p></div>
+      <div class="footer-meta"><span id="updated-at">Base em atualizaÃ§Ã£o</span><a href="https://tcgdex.net" target="_blank" rel="noreferrer">TCGdex â†—</a><a href="https://pokemontcg.io" target="_blank" rel="noreferrer">PokÃ©mon TCG API â†—</a></div>
     </footer>
 
     <dialog id="card-dialog" aria-labelledby="dialog-title">
-      <button class="dialog-close" type="button" aria-label="Fechar detalhes">×</button>
+      <button class="dialog-close" type="button" aria-label="Fechar detalhes">Ã—</button>
       <div id="dialog-content"></div>
     </dialog>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>
 </html>
+

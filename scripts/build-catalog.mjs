@@ -1,18 +1,19 @@
 import { mkdir, writeFile } from "node:fs/promises";
 
 const API = "https://api.tcgdex.net/v2";
+const POKEMON_TCG_API = "https://api.pokemontcg.io/v2";
 const generatedAt = new Date().toISOString();
 
 const species = [
-  { id: "zorua", label: "Zorua", pt: /zorua/i, ja: /ゾロア/, dex: 570 },
-  { id: "zoroark", label: "Zoroark", pt: /zoroark/i, ja: /ゾロアーク/, dex: 571 },
-  { id: "zorua-hisui", label: "Zorua de Hisui", pt: /zorua de hisui/i, ja: /ヒスイゾロア/, dex: 570, hisui: true },
-  { id: "zoroark-hisui", label: "Zoroark de Hisui", pt: /zoroark de hisui/i, ja: /ヒスイゾロアーク/, dex: 571, hisui: true },
-  { id: "rowlet", label: "Rowlet", pt: /rowlet/i, ja: /モクロー/, dex: 722 },
-  { id: "dartrix", label: "Dartrix", pt: /dartrix/i, ja: /フクスロー/, dex: 723 },
-  { id: "decidueye", label: "Decidueye", pt: /decidueye/i, ja: /ジュナイパー/, dex: 724 },
-  { id: "bidoof", label: "Bidoof", pt: /bidoof/i, ja: /ビッパ/, dex: 399 },
-  { id: "bibarel", label: "Bibarel", pt: /bibarel/i, ja: /ビーダル/, dex: 400 },
+  { id: "zorua", label: "Zorua", pt: /zorua/i, en: /zorua/i, ja: /ã‚¾ãƒ­ã‚¢/, dex: 570 },
+  { id: "zoroark", label: "Zoroark", pt: /zoroark/i, en: /zoroark/i, ja: /ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/, dex: 571 },
+  { id: "zorua-hisui", label: "Zorua de Hisui", pt: /zorua de hisui/i, en: /hisuian zorua/i, ja: /ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢/, dex: 570, hisui: true },
+  { id: "zoroark-hisui", label: "Zoroark de Hisui", pt: /zoroark de hisui/i, en: /hisuian zoroark/i, ja: /ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/, dex: 571, hisui: true },
+  { id: "rowlet", label: "Rowlet", pt: /rowlet/i, en: /rowlet/i, ja: /ãƒ¢ã‚¯ãƒ­ãƒ¼/, dex: 722 },
+  { id: "dartrix", label: "Dartrix", pt: /dartrix/i, en: /dartrix/i, ja: /ãƒ•ã‚¯ã‚¹ãƒ­ãƒ¼/, dex: 723 },
+  { id: "decidueye", label: "Decidueye", pt: /decidueye/i, en: /decidueye/i, ja: /ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼/, dex: 724 },
+  { id: "bidoof", label: "Bidoof", pt: /bidoof/i, en: /bidoof/i, ja: /ãƒ“ãƒƒãƒ‘/, dex: 399 },
+  { id: "bibarel", label: "Bibarel", pt: /bibarel/i, en: /bibarel/i, ja: /ãƒ“ãƒ¼ãƒ€ãƒ«/, dex: 400 },
 ];
 
 const rarityAliases = new Map([
@@ -40,15 +41,16 @@ function normalizeRarity(value = "") {
 
 function identifySpecies(card, language) {
   const name = card.name ?? "";
-  if (language === "pt") {
-    const hisui = species.find((item) => item.hisui && item.pt.test(name));
+  if (language === "pt" || language === "en") {
+    const pattern = language === "pt" ? "pt" : "en";
+    const hisui = species.find((item) => item.hisui && item[pattern].test(name));
     if (hisui) return hisui;
-    return species.find((item) => !item.hisui && item.pt.test(name));
+    return species.find((item) => !item.hisui && item[pattern].test(name));
   }
-  if (/ヒスイゾロアーク/.test(name)) return species.find((item) => item.id === "zoroark-hisui");
-  if (/ヒスイゾロア/.test(name)) return species.find((item) => item.id === "zorua-hisui");
-  if (/ゾロアーク/.test(name)) return species.find((item) => item.id === "zoroark");
-  if (/ゾロア/.test(name)) return species.find((item) => item.id === "zorua");
+  if (/ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/.test(name)) return species.find((item) => item.id === "zoroark-hisui");
+  if (/ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢/.test(name)) return species.find((item) => item.id === "zorua-hisui");
+  if (/ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/.test(name)) return species.find((item) => item.id === "zoroark");
+  if (/ã‚¾ãƒ­ã‚¢/.test(name)) return species.find((item) => item.id === "zorua");
   return species.find((item) => !item.hisui && item.ja.test(name));
 }
 
@@ -64,7 +66,7 @@ function mechanicsFingerprint(card, speciesId) {
   }));
   return JSON.stringify({
     speciesId,
-    illustrator: normalizeText(card.illustrator),
+    illustrator: normalizeText(card.illustrator ?? card.artist),
     hp: card.hp ?? null,
     attacks,
     abilities: (card.abilities ?? []).length,
@@ -96,7 +98,7 @@ function variantLabel(variant, language) {
   if (variant.foil) parts.push(`foil ${variant.foil}`);
   if (variant.stamp?.length) parts.push(`selo ${variant.stamp.join(", ")}`);
   if (normalizeText(variant.size) === "jumbo") parts.push("jumbo");
-  return parts.join(" · ");
+  return parts.join(" Â· ");
 }
 
 async function getJson(url, retries = 3) {
@@ -104,7 +106,7 @@ async function getJson(url, retries = 3) {
     const response = await fetch(url, { headers: { "user-agent": "my-master-set/1.0" } });
     if (response.ok) return response.json();
     if (attempt === retries) throw new Error(`${response.status} ao acessar ${url}`);
-    await new Promise((resolve) => setTimeout(resolve, 250 * attempt));
+    await new Promise((resolve) => setTimeout(resolve, Math.min(1000 * attempt, 5000)));
   }
 }
 
@@ -128,37 +130,139 @@ async function fetchCards(language) {
   return details.filter((card) => normalizeText(card?.category) === "pokemon" && !isPocketCard(card) && identifySpecies(card, language));
 }
 
+async function fetchPokemonTcgCards() {
+  const queries = ["Zorua", "Zoroark", "Rowlet", "Dartrix", "Decidueye", "Bidoof", "Bibarel"];
+  const pages = await mapLimit(queries, 1, async (name) => {
+    const url = `${POKEMON_TCG_API}/cards?q=${encodeURIComponent(`name:${name}`)}&pageSize=250&orderBy=set.releaseDate,number`;
+    return getJson(url, 8);
+  });
+  const unique = new Map();
+  for (const card of pages.flatMap((page) => page.data ?? [])) {
+    const pokemon = identifySpecies(card, "en");
+    if (pokemon && normalizeText(card.supertype) === "pokemon") unique.set(card.id, card);
+  }
+  return [...unique.values()];
+}
+
+function normalizePrintingId(id = "") {
+  const separator = id.indexOf("-");
+  if (separator < 0) return normalizeText(id);
+  let setId = id.slice(0, separator).toLowerCase();
+  const localId = id.slice(separator + 1).toLowerCase();
+  setId = setId.replace(/^swsh45/, "swsh4.5").replace(/pt5/g, ".5");
+  return `${setId}-${localId}`;
+}
+
+function pokemonTcgVariants(card) {
+  const mapping = {
+    normal: { type: "normal", size: "standard" },
+    holofoil: { type: "holo", size: "standard" },
+    reverseHolofoil: { type: "reverse", size: "standard" },
+    firstEditionNormal: { type: "normal", size: "standard", stamp: ["1st edition"] },
+    firstEditionHolofoil: { type: "holo", size: "standard", stamp: ["1st edition"] },
+    unlimited: { type: "normal", size: "standard", stamp: ["unlimited"] },
+  };
+  const variants = Object.keys(card.tcgplayer?.prices ?? {}).map((key) => mapping[key]).filter(Boolean);
+  if (variants.length) return variants;
+  return [{ type: normalizeText(card.rarity).includes("holo") ? "holo" : "normal", size: "standard" }];
+}
+
+function imageReference(card, language) {
+  if (card.image) {
+    return {
+      low: `${card.image}/low.webp`,
+      high: `${card.image}/high.webp`,
+      language: language === "pt" ? "PT-BR" : language === "ja" ? "JaponÃªs" : "InglÃªs",
+    };
+  }
+  if (card.images?.small) {
+    return { low: card.images.small, high: card.images.large ?? card.images.small, language: "InglÃªs" };
+  }
+  return null;
+}
+
+const knownImageFallbacks = new Map([
+  ["pt:mep-043", { low: "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png", high: "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png", language: "InglÃªs" }],
+  ["ja:SM8b-162", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png", language: "JaponÃªs" }],
+  ["ja:SM8b-163", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png", language: "JaponÃªs" }],
+  ["ja:SM8b-185", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png", language: "JaponÃªs" }],
+  ["ja:SM1p-059", { low: "https://images.pokemontcg.io/sm1/146.png", high: "https://images.pokemontcg.io/sm1/146_hires.png", language: "InglÃªs" }],
+  ["ja:SM10b-063", { low: "https://images.pokemontcg.io/sm11/237.png", high: "https://images.pokemontcg.io/sm11/237_hires.png", language: "InglÃªs" }],
+  ["ja:SM9a-066", { low: "https://images.pokemontcg.io/sm10/222.png", high: "https://images.pokemontcg.io/sm10/222_hires.png", language: "InglÃªs" }],
+  ["ja:SM3p-081", { low: "https://images.pokemontcg.io/sm35/77.png", high: "https://images.pokemontcg.io/sm35/77_hires.png", language: "InglÃªs" }],
+  ["ja:SV11W-059", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png", language: "JaponÃªs" }],
+  ["ja:SV11W-141", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png", language: "JaponÃªs" }],
+]);
+
+function knownImageFallback(language, card) {
+  return knownImageFallbacks.get(`${language}:${card.id}`) ?? null;
+}
+
 function baseRecord(card, language, pokemon, variant, extraReason = null, fallbackImage = null) {
   const variantKey = [variant.type, variant.subtype, variant.foil, variant.size, ...(variant.stamp ?? [])].filter(Boolean).join("-");
-  const imageBase = card.image ?? fallbackImage;
+  const ownImage = imageReference(card, language);
+  const resolvedImage = ownImage ?? fallbackImage;
   return {
     id: `${language}-${card.id}-${variantKey || "normal"}`,
     cardId: card.id,
     pokemon: pokemon.id,
     pokemonLabel: pokemon.label,
     name: card.name,
-    set: card.set?.name ?? "Coleção não informada",
+    set: card.set?.name ?? "ColeÃ§Ã£o nÃ£o informada",
     setId: card.set?.id ?? "",
     number: card.localId ?? "",
-    language: language === "pt" ? "PT-BR" : "Japonês",
-    rarity: card.rarity && card.rarity !== "None" ? card.rarity : "Não informada",
+    language: language === "pt" ? "PT-BR" : "JaponÃªs",
+    rarity: card.rarity && card.rarity !== "None" ? card.rarity : "NÃ£o informada",
     variant: variantLabel(variant, language),
     foil: variant.foil ?? null,
-    image: imageBase ? `${imageBase}/low.webp` : null,
-    imageHigh: imageBase ? `${imageBase}/high.webp` : null,
-    imageLanguage: card.image ? (language === "pt" ? "PT-BR" : "Japonês") : fallbackImage ? "Inglês (referência visual)" : null,
+    image: resolvedImage?.low ?? null,
+    imageHigh: resolvedImage?.high ?? null,
+    imageLanguage: resolvedImage ? (ownImage ? resolvedImage.language : `${resolvedImage.language} (referÃªncia visual)`) : null,
     illustrator: card.illustrator ?? null,
     releaseDate: card.set?.releaseDate ?? null,
     extraReason,
   };
 }
 
-const [ptCards, jaCards, enBriefCards] = await Promise.all([
+function internationalRecord(card, pokemon, variant) {
+  const variantKey = [variant.type, variant.subtype, variant.foil, variant.size, ...(variant.stamp ?? [])].filter(Boolean).join("-");
+  const image = imageReference(card, "en");
+  return {
+    id: `intl-${card.id}-${variantKey || "normal"}`,
+    cardId: card.id,
+    pokemon: pokemon.id,
+    pokemonLabel: pokemon.label,
+    name: card.name,
+    set: card.set?.name ?? "ColeÃ§Ã£o nÃ£o informada",
+    setId: card.set?.id ?? "",
+    number: card.number ?? "",
+    language: "Internacional",
+    rarity: card.rarity ?? "NÃ£o informada",
+    variant: variantLabel(variant, "en"),
+    foil: variant.foil ?? null,
+    image: image?.low ?? null,
+    imageHigh: image?.high ?? null,
+    imageLanguage: image?.language ?? null,
+    illustrator: card.artist ?? null,
+    releaseDate: card.set?.releaseDate ?? null,
+    sourceNote: "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs.",
+  };
+}
+
+const [ptCards, jaCards, internationalCards] = await Promise.all([
   fetchCards("pt"),
   fetchCards("ja"),
-  getJson(`${API}/en/cards`),
+  fetchPokemonTcgCards(),
 ]);
-const englishImages = new Map(enBriefCards.filter((card) => card.image).map((card) => [card.id, card.image]));
+
+const internationalByPrintingId = new Map(internationalCards.map((card) => [normalizePrintingId(card.id), card]));
+const internationalByFingerprint = new Map();
+for (const card of internationalCards) {
+  const pokemon = identifySpecies(card, "en");
+  const key = mechanicsFingerprint(card, pokemon.id);
+  if (!internationalByFingerprint.has(key)) internationalByFingerprint.set(key, []);
+  internationalByFingerprint.get(key).push(card);
+}
 
 const ptByFingerprint = new Map();
 for (const card of ptCards) {
@@ -170,8 +274,21 @@ for (const card of ptCards) {
 
 const primary = ptCards.flatMap((card) => {
   const pokemon = identifySpecies(card, "pt");
-  return variantsOf(card).map((variant) => baseRecord(card, "pt", pokemon, variant, null, englishImages.get(card.id) ?? null));
+  const samePrinting = internationalByPrintingId.get(normalizePrintingId(card.id));
+  const sameCard = samePrinting ?? (internationalByFingerprint.get(mechanicsFingerprint(card, pokemon.id)) ?? []).find((candidate) => candidate.images?.small);
+  const fallbackImage = knownImageFallback("pt", card) ?? (sameCard ? imageReference(sameCard, "en") : null);
+  return variantsOf(card).map((variant) => baseRecord(card, "pt", pokemon, variant, null, fallbackImage));
 });
+
+const primaryImageByCardId = new Map();
+for (const card of primary) {
+  if (!card.image || primaryImageByCardId.has(card.cardId)) continue;
+  primaryImageByCardId.set(card.cardId, {
+    low: card.image,
+    high: card.imageHigh,
+    language: (card.imageLanguage ?? "PT-BR").replace(/ \(referÃªncia visual\)$/, ""),
+  });
+}
 
 const extras = [];
 for (const card of jaCards) {
@@ -188,15 +305,26 @@ for (const card of jaCards) {
     const exclusiveFoil = Boolean(variant.foil) && !ptVariantSignatures.has(signature);
     if (!cardIsExclusive && !rarityChanged && !exclusiveFoil) continue;
     const reason = cardIsExclusive
-      ? "Sem versão equivalente em português"
+      ? "Sem versÃ£o equivalente em portuguÃªs"
       : exclusiveFoil
-        ? `Foil ${variant.foil} exclusivo da edição japonesa`
-        : "Raridade diferente da versão em português";
-    extras.push(baseRecord(card, "ja", pokemon, variant, reason));
+        ? `Foil ${variant.foil} exclusivo da ediÃ§Ã£o japonesa`
+        : "Raridade diferente da versÃ£o em portuguÃªs";
+    const internationalMatch = (internationalByFingerprint.get(mechanicsFingerprint(card, pokemon.id)) ?? []).find((candidate) => candidate.images?.small);
+    const portugueseMatch = matches.map((match) => primaryImageByCardId.get(match.id)).find(Boolean);
+    const fallbackImage = knownImageFallback("ja", card) ?? (internationalMatch ? imageReference(internationalMatch, "en") : portugueseMatch ?? null);
+    extras.push(baseRecord(card, "ja", pokemon, variant, reason, fallbackImage));
   }
 }
 
-const cards = [...primary, ...extras].sort((a, b) => (
+const ptPrintingIds = new Set(ptCards.map((card) => normalizePrintingId(card.id)));
+const international = internationalCards
+  .filter((card) => !ptPrintingIds.has(normalizePrintingId(card.id)))
+  .flatMap((card) => {
+    const pokemon = identifySpecies(card, "en");
+    return pokemonTcgVariants(card).map((variant) => internationalRecord(card, pokemon, variant));
+  });
+
+const cards = [...primary, ...international, ...extras].sort((a, b) => (
   a.language.localeCompare(b.language, "pt-BR") ||
   a.pokemonLabel.localeCompare(b.pokemonLabel, "pt-BR") ||
   a.set.localeCompare(b.set, "pt-BR", { numeric: true }) ||
@@ -207,12 +335,13 @@ const cards = [...primary, ...extras].sort((a, b) => (
 const catalog = {
   meta: {
     generatedAt,
-    source: "TCGdex",
+    source: "TCGdex + PokÃ©mon TCG API",
     sourceUrl: "https://tcgdex.net",
-    primaryLanguage: "Português (base TCGdex pt, exibida como PT-BR)",
-    scope: "Pokémon TCG físico; Pokémon TCG Pocket não incluído",
-    cardPrintings: { portuguese: ptCards.length, japaneseChecked: jaCards.length },
-    checklistEntries: { portuguese: primary.length, japaneseExtras: extras.length, total: cards.length },
+    internationalSourceUrl: "https://pokemontcg.io",
+    primaryLanguage: "PortuguÃªs (base TCGdex pt, exibida como PT-BR)",
+    scope: "PokÃ©mon TCG fÃ­sico; PokÃ©mon TCG Pocket nÃ£o incluÃ­do",
+    cardPrintings: { portuguese: ptCards.length, internationalChecked: internationalCards.length, japaneseChecked: jaCards.length },
+    checklistEntries: { portuguese: primary.length, international: international.length, japaneseExtras: extras.length, total: cards.length },
   },
   pokemon: species.map(({ id, label }) => ({ id, label })),
   cards,
@@ -223,3 +352,4 @@ const json = `${JSON.stringify(catalog, null, 2)}\n`;
 await writeFile("data/cards.json", json, "utf8");
 
 console.log(JSON.stringify(catalog.meta, null, 2));
+

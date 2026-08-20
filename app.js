@@ -61,6 +61,12 @@ function percentage(part, total) {
   return `${value < 10 && value % 1 ? value.toFixed(1) : Math.round(value)}%`;
 }
 
+function imageReferenceBadge(card) {
+  if (!card.imageLanguage || card.imageLanguage === card.language) return "";
+  const label = card.imageLanguage.startsWith("PT-BR") ? "PT" : card.imageLanguage.startsWith("InglÃªs") ? "EN" : "REF";
+  return `<span class="image-ref">IMAGEM ${label}</span>`;
+}
+
 function filteredCards() {
   if (!state.catalog) return [];
   const query = normalize(state.search.trim());
@@ -87,22 +93,24 @@ function filteredCards() {
 function renderCard(card) {
   const owned = state.owned.has(card.id);
   const image = card.image
-    ? `<img src="${escapeHtml(card.image)}" alt="Carta ${escapeHtml(card.name)} da coleção ${escapeHtml(card.set)}" loading="lazy" decoding="async"><span class="image-placeholder" hidden><b>?</b><span>Imagem ainda não disponível</span></span>`
-    : `<span class="image-placeholder"><b>?</b><span>Imagem ainda não disponível</span></span>`;
+    ? `<img src="${escapeHtml(card.image)}" alt="Carta ${escapeHtml(card.name)} da coleÃ§Ã£o ${escapeHtml(card.set)}" loading="lazy" decoding="async"><span class="image-placeholder" hidden><b>?</b><span>Imagem ainda nÃ£o disponÃ­vel</span></span>`
+    : `<span class="image-placeholder"><b>?</b><span>Imagem ainda nÃ£o disponÃ­vel</span></span>`;
   return `
     <article class="tcg-card${owned ? " is-owned" : ""}" data-card-id="${escapeHtml(card.id)}">
       <button class="card-image-wrap" type="button" data-view-card="${escapeHtml(card.id)}" aria-label="Ver detalhes de ${escapeHtml(card.name)}">
         ${image}
         <span class="language">${escapeHtml(card.language)}</span>
-        ${card.imageLanguage?.startsWith("Inglês") ? '<span class="image-ref">IMAGEM EN</span>' : ""}
-        ${owned ? '<span class="owned-label">✓ NA COLEÇÃO</span>' : ""}
+        ${imageReferenceBadge(card)}
+        ${owned ? '<span class="owned-label">âœ“ NA COLEÃ‡ÃƒO</span>' : ""}
         ${card.extraReason ? '<span class="extra-label">EXTRA JP</span>' : ""}
+        ${card.sourceNote ? '<span class="extra-label history-label">HISTÃ“RICO</span>' : ""}
       </button>
       <div class="card-info">
         <p>${escapeHtml(card.set)} <span>#${escapeHtml(card.number)}</span></p>
         <h3>${escapeHtml(card.name)}</h3>
-        <div class="card-details"><span class="rarity">◆ ${escapeHtml(card.rarity)}<br>${escapeHtml(card.variant)}</span><button class="own-button" type="button" data-toggle-owned="${escapeHtml(card.id)}" aria-label="${owned ? "Remover" : "Marcar"} ${escapeHtml(card.name)} ${owned ? "da" : "na"} coleção">${owned ? "✓" : "+"}</button></div>
+        <div class="card-details"><span class="rarity">â—† ${escapeHtml(card.rarity)}<br>${escapeHtml(card.variant)}</span><button class="own-button" type="button" data-toggle-owned="${escapeHtml(card.id)}" aria-label="${owned ? "Remover" : "Marcar"} ${escapeHtml(card.name)} ${owned ? "da" : "na"} coleÃ§Ã£o">${owned ? "âœ“" : "+"}</button></div>
         ${card.extraReason ? `<p class="extra-reason">${escapeHtml(card.extraReason)}</p>` : ""}
+        ${card.sourceNote ? `<p class="extra-reason">${escapeHtml(card.sourceNote)}</p>` : ""}
       </div>
     </article>`;
 }
@@ -132,7 +140,7 @@ function renderStats() {
   const missingPercent = percentage(missing, cards.length);
   document.querySelector("#progress-percent").textContent = ownedPercent;
   document.querySelector("#progress-bar").style.width = ownedPercent;
-  document.querySelector("#owned-total").textContent = `${owned} na coleção`;
+  document.querySelector("#owned-total").textContent = `${owned} na coleÃ§Ã£o`;
   document.querySelector("#missing-total").textContent = `${missing} faltando`;
   document.querySelector("#stat-total").textContent = cards.length;
   document.querySelector("#stat-owned").textContent = owned;
@@ -154,8 +162,13 @@ function renderCards() {
 
 function renderHeadings() {
   const pokemon = state.catalog.pokemon.find((item) => item.id === state.pokemon);
-  elements.title.textContent = pokemon ? pokemon.label : state.language === "PT-BR" ? "Todas as cartas" : "Extras japoneses";
-  elements.kicker.textContent = state.language === "PT-BR" ? "FICHÁRIO DIGITAL" : "EDIÇÕES JAPONESAS";
+  const languageHeading = {
+    "PT-BR": ["Todas as cartas", "FICHÃRIO DIGITAL"],
+    "Internacional": ["HistÃ³rico internacional", "EDIÃ‡Ã•ES AUSENTES NA BASE PT-BR"],
+    "JaponÃªs": ["Extras japoneses", "EDIÃ‡Ã•ES JAPONESAS"],
+  }[state.language];
+  elements.title.textContent = pokemon ? pokemon.label : languageHeading[0];
+  elements.kicker.textContent = languageHeading[1];
 }
 
 function renderAll({ resetVisible = false, refreshTabs = false, refreshRarities = false } = {}) {
@@ -185,7 +198,7 @@ function toggleOwned(id) {
     showToast(`${card.name} voltou para as faltantes.`);
   } else {
     state.owned.add(id);
-    showToast(`${card.name} entrou na sua coleção!`);
+    showToast(`${card.name} entrou na sua coleÃ§Ã£o!`);
   }
   saveOwned();
   renderAll();
@@ -198,29 +211,30 @@ function openCardDialog(id) {
   state.selectedCardId = id;
   const owned = state.owned.has(id);
   const image = card.imageHigh
-    ? `<img src="${escapeHtml(card.imageHigh)}" alt="Carta ${escapeHtml(card.name)} em alta resolução">`
-    : '<span class="image-placeholder"><b>?</b><span>Imagem ainda não disponível</span></span>';
+    ? `<img src="${escapeHtml(card.imageHigh)}" alt="Carta ${escapeHtml(card.name)} em alta resoluÃ§Ã£o">`
+    : '<span class="image-placeholder"><b>?</b><span>Imagem ainda nÃ£o disponÃ­vel</span></span>';
   elements.dialogContent.innerHTML = `
     <div class="dialog-layout">
       <div class="dialog-image">${image}</div>
       <div class="dialog-copy">
-        <p class="eyebrow">${escapeHtml(card.language)} · ${escapeHtml(card.pokemonLabel)}</p>
+        <p class="eyebrow">${escapeHtml(card.language)} Â· ${escapeHtml(card.pokemonLabel)}</p>
         <h2 id="dialog-title">${escapeHtml(card.name)}</h2>
         <dl>
-          <div><dt>Coleção</dt><dd>${escapeHtml(card.set)}</dd></div>
-          <div><dt>Número</dt><dd>#${escapeHtml(card.number)}</dd></div>
+          <div><dt>ColeÃ§Ã£o</dt><dd>${escapeHtml(card.set)}</dd></div>
+          <div><dt>NÃºmero</dt><dd>#${escapeHtml(card.number)}</dd></div>
           <div><dt>Raridade</dt><dd>${escapeHtml(card.rarity)}</dd></div>
           <div><dt>Variante</dt><dd>${escapeHtml(card.variant)}</dd></div>
-          ${card.imageLanguage?.startsWith("Inglês") ? '<div><dt>Imagem</dt><dd>Scan em inglês usado como referência visual; a entrada continua sendo da edição em português.</dd></div>' : ""}
+          ${card.imageLanguage && card.imageLanguage !== card.language ? `<div><dt>Imagem</dt><dd>Scan em ${escapeHtml(card.imageLanguage.replace(" (referÃªncia visual)", ""))} usado como referÃªncia visual.</dd></div>` : ""}
           ${card.illustrator ? `<div><dt>Ilustrador</dt><dd>${escapeHtml(card.illustrator)}</dd></div>` : ""}
-          ${card.extraReason ? `<div><dt>Por que é extra?</dt><dd>${escapeHtml(card.extraReason)}</dd></div>` : ""}
+          ${card.extraReason ? `<div><dt>Por que Ã© extra?</dt><dd>${escapeHtml(card.extraReason)}</dd></div>` : ""}
+          ${card.sourceNote ? `<div><dt>Por que estÃ¡ no histÃ³rico?</dt><dd>${escapeHtml(card.sourceNote)}</dd></div>` : ""}
         </dl>
-        <button class="dialog-action${owned ? " owned" : ""}" type="button" data-dialog-toggle="${escapeHtml(id)}">${owned ? "✓ Está na minha coleção" : "+ Marcar como obtida"}</button>
+        <button class="dialog-action${owned ? " owned" : ""}" type="button" data-dialog-toggle="${escapeHtml(id)}">${owned ? "âœ“ EstÃ¡ na minha coleÃ§Ã£o" : "+ Marcar como obtida"}</button>
       </div>
     </div>`;
   if (!elements.dialog.open) elements.dialog.showModal();
   elements.dialogContent.querySelector("img")?.addEventListener("error", (event) => {
-    event.currentTarget.parentElement.innerHTML = '<span class="image-placeholder"><b>?</b><span>Imagem ainda não disponível</span></span>';
+    event.currentTarget.parentElement.innerHTML = '<span class="image-placeholder"><b>?</b><span>Imagem ainda nÃ£o disponÃ­vel</span></span>';
   }, { once: true });
 }
 
@@ -239,20 +253,20 @@ function exportProgress() {
   link.download = `master-set-backup-${new Date().toISOString().slice(0, 10)}.json`;
   link.click();
   URL.revokeObjectURL(link.href);
-  showToast("Backup da coleção exportado.");
+  showToast("Backup da coleÃ§Ã£o exportado.");
 }
 
 async function importProgress(file) {
   try {
     const data = JSON.parse(await file.text());
-    if (!Array.isArray(data.owned)) throw new Error("Formato inválido");
+    if (!Array.isArray(data.owned)) throw new Error("Formato invÃ¡lido");
     const validIds = new Set(state.catalog.cards.map((card) => card.id));
     state.owned = new Set(data.owned.filter((id) => validIds.has(id)));
     saveOwned();
     renderAll();
     showToast(`${state.owned.size} cartas restauradas do backup.`);
   } catch {
-    showToast("Não foi possível importar esse arquivo.");
+    showToast("NÃ£o foi possÃ­vel importar esse arquivo.");
   }
 }
 
@@ -296,8 +310,8 @@ document.querySelector("#export-button").addEventListener("click", exportProgres
 document.querySelector("#import-button").addEventListener("click", () => document.querySelector("#import-file").click());
 document.querySelector("#import-file").addEventListener("change", (event) => { if (event.target.files[0]) importProgress(event.target.files[0]); event.target.value = ""; });
 document.querySelector("#reset-button").addEventListener("click", () => {
-  if (!state.owned.size) return showToast("Sua coleção já está zerada.");
-  if (confirm("Remover todas as marcações de cartas obtidas?")) { state.owned.clear(); saveOwned(); renderAll(); showToast("Coleção zerada."); }
+  if (!state.owned.size) return showToast("Sua coleÃ§Ã£o jÃ¡ estÃ¡ zerada.");
+  if (confirm("Remover todas as marcaÃ§Ãµes de cartas obtidas?")) { state.owned.clear(); saveOwned(); renderAll(); showToast("ColeÃ§Ã£o zerada."); }
 });
 document.querySelector(".dialog-close").addEventListener("click", () => elements.dialog.close());
 elements.dialog.addEventListener("click", (event) => { if (event.target === elements.dialog) elements.dialog.close(); });
@@ -313,15 +327,17 @@ async function initialize() {
     saveOwned();
     elements.loading.hidden = true;
     document.querySelector("#extra-count").textContent = state.catalog.meta.checklistEntries.japaneseExtras;
+    document.querySelector("#international-count").textContent = state.catalog.meta.checklistEntries.international;
     const updated = new Date(state.catalog.meta.generatedAt);
-    document.querySelector("#updated-at").textContent = `Catálogo atualizado em ${new Intl.DateTimeFormat("pt-BR", { dateStyle: "medium" }).format(updated)}`;
+    document.querySelector("#updated-at").textContent = `CatÃ¡logo atualizado em ${new Intl.DateTimeFormat("pt-BR", { dateStyle: "medium" }).format(updated)}`;
     renderPokemonTabs();
     renderRarities();
     renderAll();
   } catch (error) {
-    elements.loading.innerHTML = '<p>Não foi possível carregar o catálogo. Atualize a página para tentar novamente.</p>';
+    elements.loading.innerHTML = '<p>NÃ£o foi possÃ­vel carregar o catÃ¡logo. Atualize a pÃ¡gina para tentar novamente.</p>';
     console.error(error);
   }
 }
 
 initialize();
+
