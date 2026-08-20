@@ -10,12 +10,21 @@ const [html, app, styles, catalog] = await Promise.all([
 ]);
 
 test("a página oferece os controles principais da coleção", () => {
-  for (const marker of ["pokemon-tabs", "rarity-filter", "search-input", "stat-missing", "data-language=\"Principal\"", "data-language=\"Internacional\"", "data-language=\"Japonês\"", "import-file"]) {
+  for (const marker of ["pokemon-tabs", "rarity-filter", "search-input", "stat-missing", "data-language=\"Principal\"", "data-language=\"Internacional\"", "data-language=\"Japonês\"", "import-file", "image-export-button", "export-dialog", "export-all-images"]) {
     assert.match(html, new RegExp(marker));
   }
   assert.match(app, /localStorage/);
   assert.match(app, /data-toggle-owned/);
   assert.match(styles, /\[hidden\]\s*\{\s*display:none!important;/);
+});
+
+test("a exportação cria uma lista PNG por Pokémon e um pacote ZIP", () => {
+  for (const marker of ["createPokemonExportCanvas", "createPokemonExport", "exportOnePokemon", "exportAllPokemon", "createZip", "application/zip", "image/png", "data-export-pokemon"]) {
+    assert.match(app, new RegExp(marker.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+  }
+  assert.match(app, /state\.catalog\.pokemon\.entries\(\)/);
+  assert.match(app, /card\.language === group\.language/);
+  assert.match(app, /state\.owned\.has\(card\.id\)/);
 });
 
 test("os textos permanecem em UTF-8 sem caracteres corrompidos", () => {

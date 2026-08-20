@@ -20,7 +20,8 @@
     <header class="topbar">
       <a class="brand" href="#top" aria-label="Master Set — início"><span class="brand-mark" aria-hidden="true"><i></i></span><span>MASTER SET</span></a>
       <div class="header-actions">
-        <button class="quiet-action" id="export-button" type="button">Exportar progresso</button>
+        <button class="quiet-action export-list-action" id="image-export-button" type="button">Exportar listas</button>
+        <button class="quiet-action" id="export-button" type="button">Backup</button>
         <button class="quiet-action" id="import-button" type="button">Importar</button>
         <span class="avatar" aria-label="Coleção de Samuel">SN</span>
         <input id="import-file" type="file" accept="application/json" hidden />
@@ -95,6 +96,17 @@
     <dialog id="card-dialog" aria-labelledby="dialog-title">
       <button class="dialog-close" type="button" aria-label="Fechar detalhes">×</button>
       <div id="dialog-content"></div>
+    </dialog>
+    <dialog class="export-dialog" id="export-dialog" aria-labelledby="export-title">
+      <button class="dialog-close" type="button" aria-label="Fechar exportação">×</button>
+      <div class="export-dialog-content">
+        <p class="eyebrow">LISTAS EM IMAGEM</p>
+        <h2 id="export-title">Uma imagem para cada Pokémon.</h2>
+        <p class="export-intro">Cada PNG inclui todas as variantes do Pokémon, separadas por idioma e marcadas como “tenho” ou “falta”.</p>
+        <button class="export-all-button" id="export-all-images" type="button">Baixar as 9 imagens em ZIP</button>
+        <p class="export-status" id="export-status" role="status" aria-live="polite"></p>
+        <div class="export-pokemon-list" id="export-pokemon-list"></div>
+      </div>
     </dialog>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>

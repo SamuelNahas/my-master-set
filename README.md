@@ -18,6 +18,7 @@ A visualização **Principal** combina PT-BR e histórico internacional, prioriz
 - busca e filtra por raridade;
 - salva o progresso no navegador;
 - exporta e importa um backup em JSON;
+- exporta uma lista PNG para cada Pokémon, individualmente ou em um pacote ZIP;
 - publica automaticamente no GitHub Pages.
 
 ## Catálogo

@@ -16,6 +16,9 @@ const elements = {
   kicker: document.querySelector("#catalog-kicker"),
   dialog: document.querySelector("#card-dialog"),
   dialogContent: document.querySelector("#dialog-content"),
+  exportDialog: document.querySelector("#export-dialog"),
+  exportPokemonList: document.querySelector("#export-pokemon-list"),
+  exportStatus: document.querySelector("#export-status"),
   toast: document.querySelector("#toast"),
 };
 
@@ -261,6 +264,330 @@ function exportProgress() {
   showToast("Backup da coleção exportado.");
 }
 
+function exportCardsForPokemon(pokemonId) {
+  const languageOrder = { "PT-BR": 0, "Internacional": 1, "Japonês": 2 };
+  return state.catalog.cards
+    .filter((card) => card.pokemon === pokemonId)
+    .sort((a, b) => languageOrder[a.language] - languageOrder[b.language]
+      || collator.compare(a.set, b.set)
+      || collator.compare(a.number, b.number)
+      || collator.compare(a.variant, b.variant));
+}
+
+function exportFileSlug(value) {
+  return normalize(value).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+}
+
+function fitCanvasText(context, value, maxWidth) {
+  const text = String(value);
+  if (context.measureText(text).width <= maxWidth) return text;
+  let shortened = text;
+  while (shortened.length > 1 && context.measureText(`${shortened}…`).width > maxWidth) shortened = shortened.slice(0, -1);
+  return `${shortened}…`;
+}
+
+function exportGroups(cards) {
+  return [
+    { language: "PT-BR", label: "PORTUGUÊS BR" },
+    { language: "Internacional", label: "HISTÓRICO INTERNACIONAL" },
+    { language: "Japonês", label: "EXTRA JAPONÊS" },
+  ].map((group) => ({ ...group, cards: cards.filter((card) => card.language === group.language) }))
+    .filter((group) => group.cards.length);
+}
+
+function distributeExportGroups(groups, columnCount) {
+  const columns = Array.from({ length: columnCount }, () => ({ groups: [], rows: 0 }));
+  groups.forEach((group) => {
+    const target = columns.reduce((best, column) => column.rows < best.rows ? column : best, columns[0]);
+    target.groups.push(group);
+    target.rows += group.cards.length + 0.75;
+  });
+  return columns;
+}
+
+function drawExportCheckbox(context, x, y, owned) {
+  context.lineWidth = 3;
+  context.strokeStyle = owned ? "#2e7153" : "#bb4a42";
+  context.fillStyle = owned ? "#2e7153" : "#f4f0e7";
+  context.fillRect(x, y, 28, 28);
+  context.strokeRect(x, y, 28, 28);
+  if (!owned) return;
+  context.strokeStyle = "#ffffff";
+  context.lineWidth = 3;
+  context.lineCap = "round";
+  context.beginPath();
+  context.moveTo(x + 7, y + 14);
+  context.lineTo(x + 12, y + 20);
+  context.lineTo(x + 22, y + 8);
+  context.stroke();
+}
+
+function createPokemonExportCanvas(pokemon) {
+  const cards = exportCardsForPokemon(pokemon.id);
+  const ownedCount = cards.filter((card) => state.owned.has(card.id)).length;
+  const missingCount = cards.length - ownedCount;
+  const progress = percentage(ownedCount, cards.length);
+  const groups = exportGroups(cards);
+  const columnCount = cards.length > 32 ? 2 : 1;
+  const columns = distributeExportGroups(groups, columnCount);
+  const rowHeight = 70;
+  const groupHeight = 54;
+  const tallestContent = Math.max(...columns.map((column) => column.groups.reduce((height, group) => height + groupHeight + group.cards.length * rowHeight, 0)));
+  const width = 1600;
+  const headerHeight = 360;
+  const footerHeight = 96;
+  const height = headerHeight + tallestContent + footerHeight;
+  const canvas = document.createElement("canvas");
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext("2d");
+
+  context.fillStyle = "#f4f0e7";
+  context.fillRect(0, 0, width, height);
+  context.fillStyle = "#171c24";
+  context.fillRect(0, 0, width, 288);
+  context.fillStyle = "#db3f35";
+  context.fillRect(width - 34, 0, 34, 288);
+
+  context.fillStyle = "#db3f35";
+  context.font = "700 24px Arial, sans-serif";
+  context.letterSpacing = "5px";
+  context.fillText("MASTER SET · POKÉMON TCG", 88, 76);
+  context.letterSpacing = "0px";
+  context.fillStyle = "#ffffff";
+  context.font = "400 76px Georgia, serif";
+  context.fillText(fitCanvasText(context, pokemon.label, 870), 88, 170);
+  context.fillStyle = "#aeb0b1";
+  context.font = "400 23px Arial, sans-serif";
+  context.fillText("Lista completa de impressões e variantes", 91, 215);
+
+  const summaryX = 1030;
+  context.fillStyle = "#aeb0b1";
+  context.font = "700 18px Arial, sans-serif";
+  context.fillText("PROGRESSO", summaryX, 72);
+  context.fillStyle = "#ffffff";
+  context.font = "400 64px Georgia, serif";
+  context.fillText(progress, summaryX, 142);
+  context.font = "700 19px Arial, sans-serif";
+  context.fillText(`${ownedCount} tenho`, summaryX, 194);
+  context.fillStyle = "#aeb0b1";
+  context.fillText(`·  ${missingCount} faltam  ·  ${cards.length} total`, summaryX + 108, 194);
+  context.fillStyle = "#424750";
+  context.fillRect(summaryX, 226, 420, 8);
+  context.fillStyle = "#db3f35";
+  context.fillRect(summaryX, 226, 420 * (ownedCount / Math.max(cards.length, 1)), 8);
+
+  context.fillStyle = "#e7dfd2";
+  context.fillRect(0, 288, width, 72);
+  context.fillStyle = "#5f615f";
+  context.font = "700 18px Arial, sans-serif";
+  context.fillText("✓ TENHO", 88, 333);
+  context.fillStyle = "#2e7153";
+  context.fillRect(62, 315, 14, 14);
+  context.fillStyle = "#5f615f";
+  context.fillText("□ FALTA", 235, 333);
+  context.fillText("PT-BR · HISTÓRICO INTERNACIONAL · EXTRA JAPONÊS", 1010, 333);
+
+  const margin = 88;
+  const gap = 54;
+  const columnWidth = columnCount === 2 ? (width - margin * 2 - gap) / 2 : width - margin * 2;
+  columns.forEach((column, columnIndex) => {
+    const x = margin + columnIndex * (columnWidth + gap);
+    let y = headerHeight + 25;
+    column.groups.forEach((group) => {
+      context.fillStyle = "#db3f35";
+      context.font = "700 19px Arial, sans-serif";
+      context.fillText(`${group.label}  ·  ${group.cards.length}`, x, y + 24);
+      context.fillStyle = "#d3cabb";
+      context.fillRect(x, y + 39, columnWidth, 2);
+      y += groupHeight;
+
+      group.cards.forEach((card) => {
+        const owned = state.owned.has(card.id);
+        drawExportCheckbox(context, x, y + 6, owned);
+        context.fillStyle = "#171c24";
+        context.font = "700 20px Arial, sans-serif";
+        const mainLine = `${card.set} · #${card.number}`;
+        context.fillText(fitCanvasText(context, mainLine, columnWidth - 58), x + 48, y + 24);
+        context.fillStyle = "#77756f";
+        context.font = "400 17px Arial, sans-serif";
+        const detailLine = `${card.variant} · ${card.rarity}`;
+        context.fillText(fitCanvasText(context, detailLine, columnWidth - 58), x + 48, y + 50);
+        context.fillStyle = "#ded6ca";
+        context.fillRect(x, y + rowHeight - 2, columnWidth, 1);
+        y += rowHeight;
+      });
+    });
+  });
+
+  context.fillStyle = "#171c24";
+  context.fillRect(0, height - footerHeight, width, footerHeight);
+  context.fillStyle = "#ffffff";
+  context.font = "700 18px Arial, sans-serif";
+  context.fillText("SAMUEL NAHAS · MASTER SET", 88, height - 40);
+  context.fillStyle = "#aeb0b1";
+  context.font = "400 16px Arial, sans-serif";
+  const exportedDate = new Intl.DateTimeFormat("pt-BR", { dateStyle: "long" }).format(new Date());
+  context.fillText(`Exportado em ${exportedDate}`, 1215, height - 40);
+  return canvas;
+}
+
+function canvasToPng(canvas) {
+  return new Promise((resolve, reject) => canvas.toBlob((blob) => blob ? resolve(blob) : reject(new Error("Falha ao gerar PNG")), "image/png"));
+}
+
+function downloadBlob(blob, filename) {
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+async function createPokemonExport(pokemon) {
+  return canvasToPng(createPokemonExportCanvas(pokemon));
+}
+
+const crcTable = Array.from({ length: 256 }, (_, index) => {
+  let value = index;
+  for (let bit = 0; bit < 8; bit += 1) value = value & 1 ? 0xedb88320 ^ (value >>> 1) : value >>> 1;
+  return value >>> 0;
+});
+
+function crc32(bytes) {
+  let crc = 0xffffffff;
+  bytes.forEach((byte) => { crc = crcTable[(crc ^ byte) & 0xff] ^ (crc >>> 8); });
+  return (crc ^ 0xffffffff) >>> 0;
+}
+
+function zipDateTime(date = new Date()) {
+  return {
+    time: (date.getHours() << 11) | (date.getMinutes() << 5) | (date.getSeconds() >> 1),
+    date: ((Math.max(date.getFullYear(), 1980) - 1980) << 9) | ((date.getMonth() + 1) << 5) | date.getDate(),
+  };
+}
+
+function joinByteArrays(parts) {
+  const output = new Uint8Array(parts.reduce((total, part) => total + part.length, 0));
+  let offset = 0;
+  parts.forEach((part) => { output.set(part, offset); offset += part.length; });
+  return output;
+}
+
+async function createZip(files) {
+  const encoder = new TextEncoder();
+  const localParts = [];
+  const centralParts = [];
+  let localOffset = 0;
+  const stamp = zipDateTime();
+
+  for (const file of files) {
+    const name = encoder.encode(file.name);
+    const bytes = new Uint8Array(await file.blob.arrayBuffer());
+    const checksum = crc32(bytes);
+    const localHeader = new Uint8Array(30 + name.length);
+    const localView = new DataView(localHeader.buffer);
+    localView.setUint32(0, 0x04034b50, true);
+    localView.setUint16(4, 20, true);
+    localView.setUint16(6, 0x0800, true);
+    localView.setUint16(10, stamp.time, true);
+    localView.setUint16(12, stamp.date, true);
+    localView.setUint32(14, checksum, true);
+    localView.setUint32(18, bytes.length, true);
+    localView.setUint32(22, bytes.length, true);
+    localView.setUint16(26, name.length, true);
+    localHeader.set(name, 30);
+    localParts.push(localHeader, bytes);
+
+    const centralHeader = new Uint8Array(46 + name.length);
+    const centralView = new DataView(centralHeader.buffer);
+    centralView.setUint32(0, 0x02014b50, true);
+    centralView.setUint16(4, 20, true);
+    centralView.setUint16(6, 20, true);
+    centralView.setUint16(8, 0x0800, true);
+    centralView.setUint16(12, stamp.time, true);
+    centralView.setUint16(14, stamp.date, true);
+    centralView.setUint32(16, checksum, true);
+    centralView.setUint32(20, bytes.length, true);
+    centralView.setUint32(24, bytes.length, true);
+    centralView.setUint16(28, name.length, true);
+    centralView.setUint32(42, localOffset, true);
+    centralHeader.set(name, 46);
+    centralParts.push(centralHeader);
+    localOffset += localHeader.length + bytes.length;
+  }
+
+  const centralDirectory = joinByteArrays(centralParts);
+  const end = new Uint8Array(22);
+  const endView = new DataView(end.buffer);
+  endView.setUint32(0, 0x06054b50, true);
+  endView.setUint16(8, files.length, true);
+  endView.setUint16(10, files.length, true);
+  endView.setUint32(12, centralDirectory.length, true);
+  endView.setUint32(16, localOffset, true);
+  return new Blob([...localParts, centralDirectory, end], { type: "application/zip" });
+}
+
+function renderExportPokemonList() {
+  elements.exportPokemonList.innerHTML = state.catalog.pokemon.map((pokemon) => {
+    const cards = exportCardsForPokemon(pokemon.id);
+    const owned = cards.filter((card) => state.owned.has(card.id)).length;
+    return `<div class="export-pokemon-row"><div><strong>${escapeHtml(pokemon.label)}</strong><span>${owned} de ${cards.length} variantes · ${percentage(owned, cards.length)}</span></div><button type="button" data-export-pokemon="${escapeHtml(pokemon.id)}">Baixar PNG</button></div>`;
+  }).join("");
+}
+
+function openExportDialog() {
+  renderExportPokemonList();
+  elements.exportStatus.textContent = "";
+  elements.exportDialog.showModal();
+}
+
+async function exportOnePokemon(pokemonId, button) {
+  const pokemon = state.catalog.pokemon.find((item) => item.id === pokemonId);
+  if (!pokemon) return;
+  const previousText = button.textContent;
+  button.disabled = true;
+  button.textContent = "Gerando…";
+  try {
+    const blob = await createPokemonExport(pokemon);
+    downloadBlob(blob, `master-set-${exportFileSlug(pokemon.label)}.png`);
+    showToast(`Lista de ${pokemon.label} exportada.`);
+  } catch (error) {
+    console.error(error);
+    showToast("Não foi possível gerar essa imagem.");
+  } finally {
+    button.disabled = false;
+    button.textContent = previousText;
+  }
+}
+
+async function exportAllPokemon() {
+  const button = document.querySelector("#export-all-images");
+  button.disabled = true;
+  try {
+    const files = [];
+    for (const [index, pokemon] of state.catalog.pokemon.entries()) {
+      elements.exportStatus.textContent = `Gerando imagem ${index + 1} de ${state.catalog.pokemon.length}: ${pokemon.label}…`;
+      const blob = await createPokemonExport(pokemon);
+      files.push({ name: `master-set-${exportFileSlug(pokemon.label)}.png`, blob });
+      await new Promise((resolve) => setTimeout(resolve, 0));
+    }
+    elements.exportStatus.textContent = "Preparando o pacote…";
+    const zip = await createZip(files);
+    downloadBlob(zip, `master-set-listas-${new Date().toISOString().slice(0, 10)}.zip`);
+    elements.exportStatus.textContent = "Pronto: as 9 imagens foram baixadas.";
+    showToast("Pacote com as 9 listas exportado.");
+  } catch (error) {
+    console.error(error);
+    elements.exportStatus.textContent = "Não foi possível gerar o pacote. Tente baixar as imagens individualmente.";
+  } finally {
+    button.disabled = false;
+  }
+}
+
 async function importProgress(file) {
   try {
     const data = JSON.parse(await file.text());
@@ -311,7 +638,13 @@ elements.search.addEventListener("input", () => { state.search = elements.search
 elements.rarity.addEventListener("change", () => { state.rarity = elements.rarity.value; renderAll({ resetVisible: true }); });
 elements.sort.addEventListener("change", () => { state.sort = elements.sort.value; renderAll({ resetVisible: true }); });
 elements.loadMore.addEventListener("click", () => { state.visible += PAGE_SIZE; renderCards(); });
+document.querySelector("#image-export-button").addEventListener("click", openExportDialog);
 document.querySelector("#export-button").addEventListener("click", exportProgress);
+document.querySelector("#export-all-images").addEventListener("click", exportAllPokemon);
+elements.exportPokemonList.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-export-pokemon]");
+  if (button) exportOnePokemon(button.dataset.exportPokemon, button);
+});
 document.querySelector("#import-button").addEventListener("click", () => document.querySelector("#import-file").click());
 document.querySelector("#import-file").addEventListener("change", (event) => { if (event.target.files[0]) importProgress(event.target.files[0]); event.target.value = ""; });
 document.querySelector("#reset-button").addEventListener("click", () => {
@@ -321,6 +654,8 @@ document.querySelector("#reset-button").addEventListener("click", () => {
 document.querySelector(".dialog-close").addEventListener("click", () => elements.dialog.close());
 elements.dialog.addEventListener("click", (event) => { if (event.target === elements.dialog) elements.dialog.close(); });
 elements.dialogContent.addEventListener("click", (event) => { const button = event.target.closest("[data-dialog-toggle]"); if (button) toggleOwned(button.dataset.dialogToggle); });
+elements.exportDialog.querySelector(".dialog-close").addEventListener("click", () => elements.exportDialog.close());
+elements.exportDialog.addEventListener("click", (event) => { if (event.target === elements.exportDialog) elements.exportDialog.close(); });
 
 async function initialize() {
   try {
