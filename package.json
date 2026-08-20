@@ -1,0 +1,10 @@
+{
+  "name": "my-master-set",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "catalog": "node --preserve-symlinks --preserve-symlinks-main scripts/build-catalog.mjs",
+    "test": "node --preserve-symlinks --preserve-symlinks-main --test tests/static-site.test.mjs"
+  }
+}

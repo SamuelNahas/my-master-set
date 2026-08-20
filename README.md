@@ -39,4 +39,3 @@ Sirva a pasta com qualquer servidor estático. O site não precisa de API, conta
 ## GitHub Pages
 
 O fluxo em `.github/workflows/pages.yml` publica o conteúdo automaticamente após cada envio para `main`. No repositório, configure **Settings → Pages → Source → GitHub Actions** na primeira publicação.
-
