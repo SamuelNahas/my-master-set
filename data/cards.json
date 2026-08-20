@@ -1,21 +1,22 @@
 {
   "meta": {
-    "generatedAt": "2026-08-20T18:54:52.644Z",
-    "source": "TCGdex + PokÃ©mon TCG API",
+    "generatedAt": "2026-08-20T19:12:05.376Z",
+    "source": "TCGdex + Pokémon TCG API + PkmnCards",
     "sourceUrl": "https://tcgdex.net",
     "internationalSourceUrl": "https://pokemontcg.io",
-    "primaryLanguage": "PortuguÃªs (base TCGdex pt, exibida como PT-BR)",
-    "scope": "PokÃ©mon TCG fÃ­sico; PokÃ©mon TCG Pocket nÃ£o incluÃ­do",
+    "supplementalSourceUrl": "https://pkmncards.com",
+    "primaryLanguage": "Português (base TCGdex pt, exibida como PT-BR)",
+    "scope": "Pokémon TCG físico; Pokémon TCG Pocket não incluído",
     "cardPrintings": {
       "portuguese": 122,
-      "internationalChecked": 145,
+      "internationalChecked": 146,
       "japaneseChecked": 95
     },
     "checklistEntries": {
       "portuguese": 172,
-      "international": 90,
+      "international": 75,
       "japaneseExtras": 47,
-      "total": 309
+      "total": 294
     }
   },
   "pokemon": [
@@ -72,10 +73,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp1/20.png",
       "imageHigh": "https://images.pokemontcg.io/dp1/20_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Ken Sugimori",
       "releaseDate": "2007/05/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp1-20-reverse-standard",
@@ -92,50 +94,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp1/20.png",
       "imageHigh": "https://images.pokemontcg.io/dp1/20_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Ken Sugimori",
       "releaseDate": "2007/05/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-pgo-60-normal-standard",
-      "cardId": "pgo-60",
-      "pokemon": "bibarel",
-      "pokemonLabel": "Bibarel",
-      "name": "Bibarel",
-      "set": "PokÃ©mon GO",
-      "setId": "pgo",
-      "number": "60",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "normal",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/pgo/60.png",
-      "imageHigh": "https://images.pokemontcg.io/pgo/60_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "KIYOTAKA OSHIYAMA",
-      "releaseDate": "2022/07/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-pgo-60-reverse-standard",
-      "cardId": "pgo-60",
-      "pokemon": "bibarel",
-      "pokemonLabel": "Bibarel",
-      "name": "Bibarel",
-      "set": "PokÃ©mon GO",
-      "setId": "pgo",
-      "number": "60",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/pgo/60.png",
-      "imageHigh": "https://images.pokemontcg.io/pgo/60_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "KIYOTAKA OSHIYAMA",
-      "releaseDate": "2022/07/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-ru1-16-normal-standard",
@@ -143,19 +106,20 @@
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
       "name": "Bibarel",
-      "set": "PokÃ©mon Rumble",
+      "set": "Pokémon Rumble",
       "setId": "ru1",
       "number": "16",
       "language": "Internacional",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "normal",
       "foil": null,
       "image": "https://images.pokemontcg.io/ru1/16.png",
       "imageHigh": "https://images.pokemontcg.io/ru1/16_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Pokemon Rumble",
       "releaseDate": "2009/12/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp7-32-normal-standard",
@@ -172,10 +136,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp7/32.png",
       "imageHigh": "https://images.pokemontcg.io/dp7/32_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Kouki Saitou",
       "releaseDate": "2008/11/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp7-32-reverse-standard",
@@ -192,10 +157,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp7/32.png",
       "imageHigh": "https://images.pokemontcg.io/dp7/32_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Kouki Saitou",
       "releaseDate": "2008/11/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-pl3-51-normal-standard",
@@ -212,10 +178,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/pl3/51.png",
       "imageHigh": "https://images.pokemontcg.io/pl3/51_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Atsuko Nishida",
       "releaseDate": "2009/08/19",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-pl3-51-reverse-standard",
@@ -232,10 +199,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/pl3/51.png",
       "imageHigh": "https://images.pokemontcg.io/pl3/51_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Atsuko Nishida",
       "releaseDate": "2009/08/19",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp1-70-normal-standard",
@@ -252,10 +220,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp1/70.png",
       "imageHigh": "https://images.pokemontcg.io/dp1/70_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Ken Sugimori",
       "releaseDate": "2007/05/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp1-70-reverse-standard",
@@ -272,10 +241,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp1/70.png",
       "imageHigh": "https://images.pokemontcg.io/dp1/70_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Ken Sugimori",
       "releaseDate": "2007/05/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp2-73-normal-standard",
@@ -292,10 +262,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp2/73.png",
       "imageHigh": "https://images.pokemontcg.io/dp2/73_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Yusuke Ohmura",
       "releaseDate": "2007/08/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp2-73-reverse-standard",
@@ -312,50 +283,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp2/73.png",
       "imageHigh": "https://images.pokemontcg.io/dp2/73_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Yusuke Ohmura",
       "releaseDate": "2007/08/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-pgo-59-normal-standard",
-      "cardId": "pgo-59",
-      "pokemon": "bidoof",
-      "pokemonLabel": "Bidoof",
-      "name": "Bidoof",
-      "set": "PokÃ©mon GO",
-      "setId": "pgo",
-      "number": "59",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "normal",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/pgo/59.png",
-      "imageHigh": "https://images.pokemontcg.io/pgo/59_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Tomokazu Komiya",
-      "releaseDate": "2022/07/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-pgo-59-reverse-standard",
-      "cardId": "pgo-59",
-      "pokemon": "bidoof",
-      "pokemonLabel": "Bidoof",
-      "name": "Bidoof",
-      "set": "PokÃ©mon GO",
-      "setId": "pgo",
-      "number": "59",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/pgo/59.png",
-      "imageHigh": "https://images.pokemontcg.io/pgo/59_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Tomokazu Komiya",
-      "releaseDate": "2022/07/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-pop6-11-normal-standard",
@@ -372,10 +304,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/pop6/11.png",
       "imageHigh": "https://images.pokemontcg.io/pop6/11_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Mitsuhiro Arita",
       "releaseDate": "2007/09/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp7-54-normal-standard",
@@ -392,10 +325,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp7/54.png",
       "imageHigh": "https://images.pokemontcg.io/dp7/54_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Yuka Morii",
       "releaseDate": "2008/11/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-dp7-54-reverse-standard",
@@ -412,10 +346,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/dp7/54.png",
       "imageHigh": "https://images.pokemontcg.io/dp7/54_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Yuka Morii",
       "releaseDate": "2008/11/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-pl3-91-normal-standard",
@@ -432,10 +367,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/pl3/91.png",
       "imageHigh": "https://images.pokemontcg.io/pl3/91_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Atsuko Nishida",
       "releaseDate": "2009/08/19",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-pl3-91-reverse-standard",
@@ -452,10 +388,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/pl3/91.png",
       "imageHigh": "https://images.pokemontcg.io/pl3/91_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Atsuko Nishida",
       "releaseDate": "2009/08/19",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-swshp-SWSH177-holo-standard",
@@ -472,50 +409,32 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH177.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH177_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "The PokÃ©mon Company Art Team",
+      "imageLanguage": "Inglês",
+      "illustrator": "The Pokémon Company Art Team",
       "releaseDate": "2019/11/15",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
-      "id": "intl-swsh10-20-normal-standard",
-      "cardId": "swsh10-20",
-      "pokemon": "dartrix",
-      "pokemonLabel": "Dartrix",
-      "name": "Dartrix",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "20",
+      "id": "intl-tk7a-12-normal-standard",
+      "cardId": "tk7a-12",
+      "pokemon": "bidoof",
+      "pokemonLabel": "Bidoof",
+      "name": "Bidoof",
+      "set": "XY Trainer Kit—Bisharp",
+      "setId": "tk7a",
+      "number": "12",
       "language": "Internacional",
-      "rarity": "Uncommon",
+      "rarity": "No Rarity",
       "variant": "normal",
       "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/20.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/20_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "0313",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-20-reverse-standard",
-      "cardId": "swsh10-20",
-      "pokemon": "dartrix",
-      "pokemonLabel": "Dartrix",
-      "name": "Dartrix",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "20",
-      "language": "Internacional",
-      "rarity": "Uncommon",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/20.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/20_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "0313",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "image": "https://pkmncards.com/wp-content/uploads/en_US-TK7A-012-bidoof.png",
+      "imageHigh": "https://pkmncards.com/wp-content/uploads/en_US-TK7A-012-bidoof.png",
+      "imageLanguage": "Inglês",
+      "illustrator": "Kagemaru Himeno",
+      "releaseDate": "2014/11/01",
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": "https://pkmncards.com/card/bidoof-xy-trainer-kit-bisharp-tk7a-12/"
     },
     {
       "id": "intl-sma-SV3-holo-standard",
@@ -532,10 +451,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sma/SV3.png",
       "imageHigh": "https://images.pokemontcg.io/sma/SV3_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Shigenori Negishi",
       "releaseDate": "2019/08/23",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv3-14-normal-standard",
@@ -552,10 +472,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv3/14.png",
       "imageHigh": "https://images.pokemontcg.io/sv3/14_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "sui",
       "releaseDate": "2023/08/11",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv3-14-reverse-standard",
@@ -572,10 +493,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv3/14.png",
       "imageHigh": "https://images.pokemontcg.io/sv3/14_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "sui",
       "releaseDate": "2023/08/11",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me3-11-normal-standard",
@@ -592,10 +514,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me3-11/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me3-11/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2026/03/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-4-normal-standard",
@@ -612,10 +535,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/4.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/4_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-4-reverse-standard",
@@ -632,90 +556,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/4.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/4_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-82-holo-standard",
-      "cardId": "swsh10-82",
-      "pokemon": "decidueye",
-      "pokemonLabel": "Decidueye",
-      "name": "Hisuian Decidueye",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "82",
-      "language": "Internacional",
-      "rarity": "Rare Holo",
-      "variant": "holo",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/82.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/82_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Kouki Saitou",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-82-reverse-standard",
-      "cardId": "swsh10-82",
-      "pokemon": "decidueye",
-      "pokemonLabel": "Decidueye",
-      "name": "Hisuian Decidueye",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "82",
-      "language": "Internacional",
-      "rarity": "Rare Holo",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/82.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/82_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Kouki Saitou",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-83-holo-standard",
-      "cardId": "swsh10-83",
-      "pokemon": "decidueye",
-      "pokemonLabel": "Decidueye",
-      "name": "Hisuian Decidueye V",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "83",
-      "language": "Internacional",
-      "rarity": "Rare Holo V",
-      "variant": "holo",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/83.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/83_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Shin Nagasawa",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-84-holo-standard",
-      "cardId": "swsh10-84",
-      "pokemon": "decidueye",
-      "pokemonLabel": "Decidueye",
-      "name": "Hisuian Decidueye VSTAR",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "84",
-      "language": "Internacional",
-      "rarity": "Rare Holo VSTAR",
-      "variant": "holo",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/84.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/84_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "5ban Graphics",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sma-SV47-holo-standard",
@@ -732,10 +577,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sma/SV47.png",
       "imageHigh": "https://images.pokemontcg.io/sma/SV47_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "5ban Graphics",
       "releaseDate": "2019/08/23",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv3-15-holo-standard",
@@ -752,10 +598,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv3/15.png",
       "imageHigh": "https://images.pokemontcg.io/sv3/15_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "PLANETA Mochizuki",
       "releaseDate": "2023/08/11",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me3-12-normal-standard",
@@ -772,10 +619,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me3-12/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me3-12/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2026/03/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me3-100-normal-standard",
@@ -792,10 +640,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me3-100/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me3-100/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2026/03/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-5-normal-standard",
@@ -812,10 +661,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/5.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/5_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-5-reverse-standard",
@@ -832,50 +682,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/5.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/5_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-19-normal-standard",
-      "cardId": "swsh10-19",
-      "pokemon": "rowlet",
-      "pokemonLabel": "Rowlet",
-      "name": "Rowlet",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "19",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "normal",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/19.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/19_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "kawayoo",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh10-19-reverse-standard",
-      "cardId": "swsh10-19",
-      "pokemon": "rowlet",
-      "pokemonLabel": "Rowlet",
-      "name": "Rowlet",
-      "set": "Astral Radiance",
-      "setId": "swsh10",
-      "number": "19",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh10/19.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh10/19_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "kawayoo",
-      "releaseDate": "2022/05/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sma-SV2-holo-standard",
@@ -892,10 +703,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sma/SV2.png",
       "imageHigh": "https://images.pokemontcg.io/sma/SV2_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "sui",
       "releaseDate": "2019/08/23",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-mcd17-1-normal-standard",
@@ -907,15 +719,16 @@
       "setId": "mcd17",
       "number": "1",
       "language": "Internacional",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "normal",
       "foil": null,
       "image": "https://images.pokemontcg.io/mcd17/1.png",
       "imageHigh": "https://images.pokemontcg.io/mcd17/1_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Megumi Mizutani",
       "releaseDate": "2017/11/07",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-mcd21-7-holo-standard",
@@ -927,15 +740,16 @@
       "setId": "mcd21",
       "number": "7",
       "language": "Internacional",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/mcd21/7.png",
       "imageHigh": "https://images.pokemontcg.io/mcd21/7_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Megumi Mizutani",
       "releaseDate": "2021/02/09",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-mcd21-7-normal-standard",
@@ -947,15 +761,16 @@
       "setId": "mcd21",
       "number": "7",
       "language": "Internacional",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "normal",
       "foil": null,
       "image": "https://images.pokemontcg.io/mcd21/7.png",
       "imageHigh": "https://images.pokemontcg.io/mcd21/7_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Megumi Mizutani",
       "releaseDate": "2021/02/09",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-mcd22-2-holo-standard",
@@ -967,15 +782,16 @@
       "setId": "mcd22",
       "number": "2",
       "language": "Internacional",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/mcd22/2.png",
       "imageHigh": "https://images.pokemontcg.io/mcd22/2_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "HYOGONOSUKE",
       "releaseDate": "2022/08/03",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv3-13-normal-standard",
@@ -992,10 +808,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv3/13.png",
       "imageHigh": "https://images.pokemontcg.io/sv3/13_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Tomokazu Komiya",
       "releaseDate": "2023/08/11",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv3-13-reverse-standard",
@@ -1012,10 +829,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv3/13.png",
       "imageHigh": "https://images.pokemontcg.io/sv3/13_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Tomokazu Komiya",
       "releaseDate": "2023/08/11",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me3-10-normal-standard",
@@ -1032,10 +850,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me3-10/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me3-10/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2026/03/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me3-90-normal-standard",
@@ -1052,10 +871,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me3-90/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me3-90/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2026/03/27",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-3-normal-standard",
@@ -1072,10 +892,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/3.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/3_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-3-reverse-standard",
@@ -1092,10 +913,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/3.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/3_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me2pt5-137-normal-standard",
@@ -1112,10 +934,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me2pt5-137/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me2pt5-137/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "takuyoa",
       "releaseDate": "2026/01/30",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me2pt5-286-normal-standard",
@@ -1132,10 +955,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me2pt5-286/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me2pt5-286/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Raita Kazama",
       "releaseDate": "2026/01/30",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bwp-BW09-holo-standard",
@@ -1152,10 +976,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bwp/BW09.png",
       "imageHigh": "https://images.pokemontcg.io/bwp/BW09_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Naoki Saito",
       "releaseDate": "2011/03/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bwp-BW19-holo-standard",
@@ -1172,10 +997,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bwp/BW19.png",
       "imageHigh": "https://images.pokemontcg.io/bwp/BW19_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "5ban Graphics",
       "releaseDate": "2011/03/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv9-98-holo-standard",
@@ -1192,10 +1018,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv9/98.png",
       "imageHigh": "https://images.pokemontcg.io/sv9/98_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "takuyoa",
       "releaseDate": "2025/03/28",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv9-175-holo-standard",
@@ -1212,10 +1039,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv9/175.png",
       "imageHigh": "https://images.pokemontcg.io/sv9/175_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "takuyoa",
       "releaseDate": "2025/03/28",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv9-185-holo-standard",
@@ -1232,10 +1060,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv9/185.png",
       "imageHigh": "https://images.pokemontcg.io/sv9/185_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Megumi Mizutani",
       "releaseDate": "2025/03/28",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv9-189-holo-standard",
@@ -1252,10 +1081,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv9/189.png",
       "imageHigh": "https://images.pokemontcg.io/sv9/189_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "takuyoa",
       "releaseDate": "2025/03/28",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bw11-90-holo-standard",
@@ -1272,10 +1102,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bw11/90.png",
       "imageHigh": "https://images.pokemontcg.io/bw11/90_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "match",
       "releaseDate": "2013/11/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bw11-90-reverse-standard",
@@ -1292,10 +1123,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bw11/90.png",
       "imageHigh": "https://images.pokemontcg.io/bw11/90_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "match",
       "releaseDate": "2013/11/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sm35-53-holo-standard",
@@ -1312,10 +1144,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sm35/53.png",
       "imageHigh": "https://images.pokemontcg.io/sm35/53_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "5ban Graphics",
       "releaseDate": "2017/10/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sm35-77-holo-standard",
@@ -1332,10 +1165,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sm35/77.png",
       "imageHigh": "https://images.pokemontcg.io/sm35/77_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "5ban Graphics",
       "releaseDate": "2017/10/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sm35-77a-normal-standard",
@@ -1352,10 +1186,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sm35/77a.png",
       "imageHigh": "https://images.pokemontcg.io/sm35/77a_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "5ban Graphics",
       "releaseDate": "2017/10/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-32-holo-standard",
@@ -1372,10 +1207,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/32.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/32_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-32-reverse-standard",
@@ -1392,10 +1228,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/32.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/32_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-rsv10pt5-62-holo-standard",
@@ -1412,10 +1249,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/rsv10pt5/62.png",
       "imageHigh": "https://images.pokemontcg.io/rsv10pt5/62_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "akagi",
       "releaseDate": "2025/07/18",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-rsv10pt5-62-reverse-standard",
@@ -1432,10 +1270,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/rsv10pt5/62.png",
       "imageHigh": "https://images.pokemontcg.io/rsv10pt5/62_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "akagi",
       "releaseDate": "2025/07/18",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-rsv10pt5-143-holo-standard",
@@ -1452,50 +1291,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/rsv10pt5/143.png",
       "imageHigh": "https://images.pokemontcg.io/rsv10pt5/143_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Iwamoto05",
       "releaseDate": "2025/07/18",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh11-76-holo-standard",
-      "cardId": "swsh11-76",
-      "pokemon": "zoroark-hisui",
-      "pokemonLabel": "Zoroark de Hisui",
-      "name": "Hisuian Zoroark",
-      "set": "Lost Origin",
-      "setId": "swsh11",
-      "number": "76",
-      "language": "Internacional",
-      "rarity": "Rare Holo",
-      "variant": "holo",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh11/76.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh11/76_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Kouki Saitou",
-      "releaseDate": "2022/09/09",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh11-76-reverse-standard",
-      "cardId": "swsh11-76",
-      "pokemon": "zoroark-hisui",
-      "pokemonLabel": "Zoroark de Hisui",
-      "name": "Hisuian Zoroark",
-      "set": "Lost Origin",
-      "setId": "swsh11",
-      "number": "76",
-      "language": "Internacional",
-      "rarity": "Rare Holo",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh11/76.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh11/76_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Kouki Saitou",
-      "releaseDate": "2022/09/09",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-me2pt5-136-normal-standard",
@@ -1512,10 +1312,11 @@
       "foil": null,
       "image": "https://images.scrydex.com/pokemon/me2pt5-136/small",
       "imageHigh": "https://images.scrydex.com/pokemon/me2pt5-136/large",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Jiro Sasumo",
       "releaseDate": "2026/01/30",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bwp-BW12-holo-standard",
@@ -1532,10 +1333,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bwp/BW12.png",
       "imageHigh": "https://images.pokemontcg.io/bwp/BW12_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Tomokazu Komiya",
       "releaseDate": "2011/03/01",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sma-SV25-holo-standard",
@@ -1552,10 +1354,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sma/SV25.png",
       "imageHigh": "https://images.pokemontcg.io/sma/SV25_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Saya Tsuruta",
       "releaseDate": "2019/08/23",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv9-97-normal-standard",
@@ -1572,10 +1375,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv9/97.png",
       "imageHigh": "https://images.pokemontcg.io/sv9/97_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Jiro Sasumo",
       "releaseDate": "2025/03/28",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv9-97-reverse-standard",
@@ -1592,10 +1396,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv9/97.png",
       "imageHigh": "https://images.pokemontcg.io/sv9/97_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Jiro Sasumo",
       "releaseDate": "2025/03/28",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bw11-89-normal-standard",
@@ -1612,10 +1417,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bw11/89.png",
       "imageHigh": "https://images.pokemontcg.io/bw11/89_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Atsuko Nishida",
       "releaseDate": "2013/11/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-bw11-89-reverse-standard",
@@ -1632,10 +1438,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/bw11/89.png",
       "imageHigh": "https://images.pokemontcg.io/bw11/89_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Atsuko Nishida",
       "releaseDate": "2013/11/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-mcd11-9-holo-standard",
@@ -1647,15 +1454,16 @@
       "setId": "mcd11",
       "number": "9",
       "language": "Internacional",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/mcd11/9.png",
       "imageHigh": "https://images.pokemontcg.io/mcd11/9_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Ken Sugimori",
       "releaseDate": "2011/06/17",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sm35-52-normal-standard",
@@ -1672,10 +1480,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sm35/52.png",
       "imageHigh": "https://images.pokemontcg.io/sm35/52_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "kodama",
       "releaseDate": "2017/10/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sm35-52-reverse-standard",
@@ -1692,10 +1501,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sm35/52.png",
       "imageHigh": "https://images.pokemontcg.io/sm35/52_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "kodama",
       "releaseDate": "2017/10/06",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-31-normal-standard",
@@ -1712,10 +1522,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/31.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/31_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-31-reverse-standard",
@@ -1732,10 +1543,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/31.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/31_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-sv6pt5-75-holo-standard",
@@ -1752,10 +1564,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/sv6pt5/75.png",
       "imageHigh": "https://images.pokemontcg.io/sv6pt5/75_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": null,
       "releaseDate": "2024/08/02",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-rsv10pt5-61-normal-standard",
@@ -1772,10 +1585,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/rsv10pt5/61.png",
       "imageHigh": "https://images.pokemontcg.io/rsv10pt5/61_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "akagi",
       "releaseDate": "2025/07/18",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-rsv10pt5-61-reverse-standard",
@@ -1792,10 +1606,11 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/rsv10pt5/61.png",
       "imageHigh": "https://images.pokemontcg.io/rsv10pt5/61_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "akagi",
       "releaseDate": "2025/07/18",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "intl-rsv10pt5-142-holo-standard",
@@ -1812,993 +1627,954 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/rsv10pt5/142.png",
       "imageHigh": "https://images.pokemontcg.io/rsv10pt5/142_hires.png",
-      "imageLanguage": "InglÃªs",
+      "imageLanguage": "Inglês",
       "illustrator": "Naoki Saito",
       "releaseDate": "2025/07/18",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh11-75-normal-standard",
-      "cardId": "swsh11-75",
-      "pokemon": "zorua-hisui",
-      "pokemonLabel": "Zorua de Hisui",
-      "name": "Hisuian Zorua",
-      "set": "Lost Origin",
-      "setId": "swsh11",
-      "number": "75",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "normal",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh11/75.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh11/75_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Akira Komayama",
-      "releaseDate": "2022/09/09",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
-    },
-    {
-      "id": "intl-swsh11-75-reverse-standard",
-      "cardId": "swsh11-75",
-      "pokemon": "zorua-hisui",
-      "pokemonLabel": "Zorua de Hisui",
-      "name": "Hisuian Zorua",
-      "set": "Lost Origin",
-      "setId": "swsh11",
-      "number": "75",
-      "language": "Internacional",
-      "rarity": "Common",
-      "variant": "reverse",
-      "foil": null,
-      "image": "https://images.pokemontcg.io/swsh11/75.png",
-      "imageHigh": "https://images.pokemontcg.io/swsh11/75_hires.png",
-      "imageLanguage": "InglÃªs",
-      "illustrator": "Akira Komayama",
-      "releaseDate": "2022/09/09",
-      "sourceNote": "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs."
+      "sourceNote": "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+      "sourcePage": null
     },
     {
       "id": "ja-S12a-122-normal-standard",
       "cardId": "S12a-122",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
-      "name": "ãƒ“ãƒ¼ãƒ€ãƒ«",
-      "set": "VSTARãƒ¦ãƒ‹ãƒãƒ¼ã‚¹",
+      "name": "ビーダル",
+      "set": "VSTARユニバース",
       "setId": "S12a",
       "number": "122",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
+      "language": "Japonês",
+      "rarity": "Não informada",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S12a/122/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S12a/122/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Misa Tsutsui",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S12a-200-holo-standard",
       "cardId": "S12a-200",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
-      "name": "ãƒ“ãƒ¼ãƒ€ãƒ«",
-      "set": "VSTARãƒ¦ãƒ‹ãƒãƒ¼ã‚¹",
+      "name": "ビーダル",
+      "set": "VSTARユニバース",
       "setId": "S12a",
       "number": "200",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Illustration rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S12a/200/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S12a/200/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Amelicart",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM10a-039-normal-standard",
       "cardId": "SM10a-039",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
-      "name": "ãƒ“ãƒ¼ãƒ€ãƒ«",
-      "set": "ã‚¸ãƒ¼ã‚¸ãƒ¼ã‚¨ãƒ³ãƒ‰",
+      "name": "ビーダル",
+      "set": "ジージーエンド",
       "setId": "SM10a",
       "number": "039",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm11/172/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm11/172/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Kagemaru Himeno",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S9-082-holo-standard",
       "cardId": "S9-082",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
-      "name": "ãƒ“ãƒ¼ãƒ€ãƒ«",
-      "set": "ã‚¹ã‚¿ãƒ¼ãƒãƒ¼ã‚¹",
+      "name": "ビーダル",
+      "set": "スターバース",
       "setId": "S9",
       "number": "082",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S9/082/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S9/082/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "OKACHEKE",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S12a-204-holo-standard",
       "cardId": "S12a-204",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
-      "name": "ãƒ“ãƒƒãƒ‘",
-      "set": "VSTARãƒ¦ãƒ‹ãƒãƒ¼ã‚¹",
+      "name": "ビッパ",
+      "set": "VSTARユニバース",
       "setId": "S12a",
       "number": "204",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Illustration rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S12a/204/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S12a/204/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Kouki Saitou",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM8b-163-holo-standard",
       "cardId": "SM8b-163",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
-      "name": "ãƒ•ã‚¯ã‚¹ãƒ­ãƒ¼",
-      "set": "GXã‚¦ãƒ«ãƒˆãƒ©ã‚·ãƒ£ã‚¤ãƒ‹ãƒ¼",
+      "name": "フクスロー",
+      "set": "GXウルトラシャイニー",
       "setId": "SM8b",
       "number": "163",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Ultra Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "Shigenori Negishi",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SM12-009-normal-standard",
       "cardId": "SM12-009",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
-      "name": "ãƒ•ã‚¯ã‚¹ãƒ­ãƒ¼",
-      "set": "ã‚ªãƒ«ã‚¿ãƒ¼ã‚¸ã‚§ãƒã‚·ã‚¹",
+      "name": "フクスロー",
+      "set": "オルタージェネシス",
       "setId": "SM12",
       "number": "009",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm12/19/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm12/19/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Akira Komayama",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S10P-007-normal-standard",
       "cardId": "S10P-007",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
-      "name": "ãƒ•ã‚¯ã‚¹ãƒ­ãƒ¼",
-      "set": "ã‚¹ãƒšãƒ¼ã‚¹ã‚¸ãƒ£ã‚°ãƒ©ãƒ¼",
+      "name": "フクスロー",
+      "set": "スペースジャグラー",
       "setId": "S10P",
       "number": "007",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10P/007/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10P/007/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "0313",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM1p-003-holo-standard",
       "cardId": "SM1p-003",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
-      "name": "ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼GX",
-      "set": "ã‚µãƒ³ï¼†ãƒ ãƒ¼ãƒ³",
+      "name": "ジュナイパーGX",
+      "set": "サン＆ムーン",
       "setId": "SM1p",
       "number": "003",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm1/12/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm1/12/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM1p-059-holo-standard",
       "cardId": "SM1p-059",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
-      "name": "ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼GX",
-      "set": "ã‚µãƒ³ï¼†ãƒ ãƒ¼ãƒ³",
+      "name": "ジュナイパーGX",
+      "set": "サン＆ムーン",
       "setId": "SM1p",
       "number": "059",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Hyper rare",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/sm1/146.png",
       "imageHigh": "https://images.pokemontcg.io/sm1/146_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10P-039-holo-standard",
       "cardId": "S10P-039",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼",
-      "set": "ã‚¹ãƒšãƒ¼ã‚¹ã‚¸ãƒ£ã‚°ãƒ©ãƒ¼",
+      "name": "ヒスイ ジュナイパー",
+      "set": "スペースジャグラー",
       "setId": "S10P",
       "number": "039",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10P/039/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10P/039/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Kouki Saitou",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S9a-044-holo-standard",
       "cardId": "S9a-044",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼V",
-      "set": "ãƒãƒˆãƒ«ãƒªãƒ¼ã‚¸ãƒ§ãƒ³",
+      "name": "ヒスイ ジュナイパーV",
+      "set": "バトルリージョン",
       "setId": "S9a",
       "number": "044",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S9a/044/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S9a/044/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Shin Nagasawa",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S9a-045-holo-standard",
       "cardId": "S9a-045",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼VSTAR",
-      "set": "ãƒãƒˆãƒ«ãƒªãƒ¼ã‚¸ãƒ§ãƒ³",
+      "name": "ヒスイ ジュナイパーVSTAR",
+      "set": "バトルリージョン",
       "setId": "S9a",
       "number": "045",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
+      "language": "Japonês",
+      "rarity": "Não informada",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S9a/045/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S9a/045/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S9a-086-holo-standard",
       "cardId": "S9a-086",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼VSTAR",
-      "set": "ãƒãƒˆãƒ«ãƒªãƒ¼ã‚¸ãƒ§ãƒ³",
+      "name": "ヒスイ ジュナイパーVSTAR",
+      "set": "バトルリージョン",
       "setId": "S9a",
       "number": "086",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
+      "language": "Japonês",
+      "rarity": "Não informada",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S9a/086/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S9a/086/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SM8b-162-holo-standard",
       "cardId": "SM8b-162",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
-      "name": "ãƒ¢ã‚¯ãƒ­ãƒ¼",
-      "set": "GXã‚¦ãƒ«ãƒˆãƒ©ã‚·ãƒ£ã‚¤ãƒ‹ãƒ¼",
+      "name": "モクロー",
+      "set": "GXウルトラシャイニー",
       "setId": "SM8b",
       "number": "162",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Ultra Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "sui",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV-P-071-normal-standard",
       "cardId": "SV-P-071",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
-      "name": "ãƒ¢ã‚¯ãƒ­ãƒ¼",
-      "set": "ã‚¹ã‚«ãƒ¼ãƒ¬ãƒƒãƒˆ&ãƒã‚¤ã‚ªãƒ¬ãƒƒãƒˆ ãƒ—ãƒ­ãƒ¢ã‚«ãƒ¼ãƒ‰",
+      "name": "モクロー",
+      "set": "スカーレット&バイオレット プロモカード",
       "setId": "SV-P",
       "number": "071",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Promo",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv03/013/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv03/013/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Tomokazu Komiya",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM10b-001-holo-standard",
       "cardId": "SM10b-001",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
-      "name": "ãƒ¢ã‚¯ãƒ­ãƒ¼&ã‚¢ãƒ­ãƒ¼ãƒ©ãƒŠãƒƒã‚·ãƒ¼GX",
-      "set": "ã‚¹ã‚«ã‚¤ãƒ¬ã‚¸ã‚§ãƒ³ãƒ‰",
+      "name": "モクロー&アローラナッシーGX",
+      "set": "スカイレジェンド",
       "setId": "SM10b",
       "number": "001",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm11/1/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm11/1/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Mitsuhiro Arita",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM10b-063-holo-standard",
       "cardId": "SM10b-063",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
-      "name": "ãƒ¢ã‚¯ãƒ­ãƒ¼&ã‚¢ãƒ­ãƒ¼ãƒ©ãƒŠãƒƒã‚·ãƒ¼GX",
-      "set": "ã‚¹ã‚«ã‚¤ãƒ¬ã‚¸ã‚§ãƒ³ãƒ‰",
+      "name": "モクロー&アローラナッシーGX",
+      "set": "スカイレジェンド",
       "setId": "SM10b",
       "number": "063",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Hyper rare",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/sm11/237.png",
       "imageHigh": "https://images.pokemontcg.io/sm11/237_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SM8b-070-holo-standard",
       "cardId": "SM8b-070",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯GX",
-      "set": "GXã‚¦ãƒ«ãƒˆãƒ©ã‚·ãƒ£ã‚¤ãƒ‹ãƒ¼",
+      "name": "ゾロアークGX",
+      "set": "GXウルトラシャイニー",
       "setId": "SM8b",
       "number": "070",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm3.5/53/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm3.5/53/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM12a-072-holo-standard",
       "cardId": "SM12a-072",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚²ãƒƒã‚³ã‚¦ã‚¬&ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯GX",
-      "set": "TAG TEAM GX ã‚¿ãƒƒã‚°ã‚ªãƒ¼ãƒ«ã‚¹ã‚¿ãƒ¼ã‚º",
+      "name": "ゲッコウガ&ゾロアークGX",
+      "set": "TAG TEAM GX タッグオールスターズ",
       "setId": "SM12a",
       "number": "072",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm10/107/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm10/107/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Mitsuhiro Arita",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S12a-128-holo-standard",
       "cardId": "S12a-128",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯V",
-      "set": "VSTARãƒ¦ãƒ‹ãƒãƒ¼ã‚¹",
+      "name": "ヒスイ ゾロアークV",
+      "set": "VSTARユニバース",
       "setId": "S12a",
       "number": "128",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S12a/128/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S12a/128/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S12a-129-holo-standard",
       "cardId": "S12a-129",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯VSTAR",
-      "set": "VSTARãƒ¦ãƒ‹ãƒãƒ¼ã‚¹",
+      "name": "ヒスイ ゾロアークVSTAR",
+      "set": "VSTARユニバース",
       "setId": "S12a",
       "number": "129",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Triple Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S12a/129/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S12a/129/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S12a-234-holo-standard",
       "cardId": "S12a-234",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯VSTAR",
-      "set": "VSTARãƒ¦ãƒ‹ãƒãƒ¼ã‚¹",
+      "name": "ヒスイ ゾロアークVSTAR",
+      "set": "VSTARユニバース",
       "setId": "S12a",
       "number": "234",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Special illustration rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S12a/234/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S12a/234/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "SIE NANAHARA",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-030-holo-standard",
       "cardId": "S10a-030",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロアーク",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "030",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/030/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/030/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Kouki Saitou",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-061-holo-standard",
       "cardId": "S10a-061",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯V",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロアークV",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "061",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/061/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/061/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-062-holo-standard",
       "cardId": "S10a-062",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯VSTAR",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロアークVSTAR",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "062",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Triple Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/062/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/062/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-083-holo-standard",
       "cardId": "S10a-083",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯V",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロアークV",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "083",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Ultra Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/083/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/083/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-092-holo-standard",
       "cardId": "S10a-092",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯VSTAR",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロアークVSTAR",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "092",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Holo Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/092/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/092/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-097-holo-standard",
       "cardId": "S10a-097",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯VSTAR",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロアークVSTAR",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "097",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Mega Hyper Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/097/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/097/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "aky CG Works",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV8a-097-reverse-masterball-standard",
       "cardId": "SV8a-097",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯",
-      "set": "ãƒ†ãƒ©ã‚¹ã‚¿ãƒ«ãƒ•ã‚§ã‚¹ex",
+      "name": "ゾロアーク",
+      "set": "テラスタルフェスex",
       "setId": "SV8a",
       "number": "097",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
-      "variant": "reverse Â· foil masterball",
+      "language": "Japonês",
+      "rarity": "Não informada",
+      "variant": "reverse · foil masterball",
       "foil": "masterball",
       "image": "https://assets.tcgdex.net/ja/SV/SV8a/097/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/SV/SV8a/097/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "nagimiso",
       "releaseDate": null,
-      "extraReason": "Foil masterball exclusivo da ediÃ§Ã£o japonesa"
+      "extraReason": "Foil masterball exclusivo da edição japonesa"
     },
     {
       "id": "ja-SM9a-025-holo-standard",
       "cardId": "SM9a-025",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚²ãƒƒã‚³ã‚¦ã‚¬&ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯GX",
-      "set": "ãƒŠã‚¤ãƒˆãƒ¦ãƒ‹ã‚¾ãƒ³",
+      "name": "ゲッコウガ&ゾロアークGX",
+      "set": "ナイトユニゾン",
       "setId": "SM9a",
       "number": "025",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm10/107/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm10/107/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Mitsuhiro Arita",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM9a-066-holo-standard",
       "cardId": "SM9a-066",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚²ãƒƒã‚³ã‚¦ã‚¬&ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯GX",
-      "set": "ãƒŠã‚¤ãƒˆãƒ¦ãƒ‹ã‚¾ãƒ³",
+      "name": "ゲッコウガ&ゾロアークGX",
+      "set": "ナイトユニゾン",
       "setId": "SM9a",
       "number": "066",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Hyper rare",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/sm10/222.png",
       "imageHigh": "https://images.pokemontcg.io/sm10/222_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SM3p-054-holo-standard",
       "cardId": "SM3p-054",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯GX",
-      "set": "ã²ã‹ã‚‹ä¼èª¬",
+      "name": "ゾロアークGX",
+      "set": "ひかる伝説",
       "setId": "SM3p",
       "number": "054",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Double rare",
       "variant": "holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sm/sm3.5/53/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sm/sm3.5/53/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-SM3p-081-holo-standard",
       "cardId": "SM3p-081",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯GX",
-      "set": "ã²ã‹ã‚‹ä¼èª¬",
+      "name": "ゾロアークGX",
+      "set": "ひかる伝説",
       "setId": "SM3p",
       "number": "081",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Hyper rare",
       "variant": "holo",
       "foil": null,
       "image": "https://images.pokemontcg.io/sm35/77.png",
       "imageHigh": "https://images.pokemontcg.io/sm35/77_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV11W-059-holo-standard",
       "cardId": "SV11W-059",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯",
-      "set": "ãƒ›ãƒ¯ã‚¤ãƒˆãƒ•ãƒ¬ã‚¢",
+      "name": "ゾロアーク",
+      "set": "ホワイトフレア",
       "setId": "SV11W",
       "number": "059",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "akagi",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV11W-059-reverse-masterball-standard",
       "cardId": "SV11W-059",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯",
-      "set": "ãƒ›ãƒ¯ã‚¤ãƒˆãƒ•ãƒ¬ã‚¢",
+      "name": "ゾロアーク",
+      "set": "ホワイトフレア",
       "setId": "SV11W",
       "number": "059",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Rare",
-      "variant": "reverse Â· foil masterball",
+      "variant": "reverse · foil masterball",
       "foil": "masterball",
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "akagi",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV11W-059-reverse-pokeball-standard",
       "cardId": "SV11W-059",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯",
-      "set": "ãƒ›ãƒ¯ã‚¤ãƒˆãƒ•ãƒ¬ã‚¢",
+      "name": "ゾロアーク",
+      "set": "ホワイトフレア",
       "setId": "SV11W",
       "number": "059",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Rare",
-      "variant": "reverse Â· foil pokeball",
+      "variant": "reverse · foil pokeball",
       "foil": "pokeball",
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "akagi",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV11W-141-holo-standard",
       "cardId": "SV11W-141",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
-      "name": "ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯",
-      "set": "ãƒ›ãƒ¯ã‚¤ãƒˆãƒ•ãƒ¬ã‚¢",
+      "name": "ゾロアーク",
+      "set": "ホワイトフレア",
       "setId": "SV11W",
       "number": "141",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Illustration rare",
       "variant": "holo",
       "foil": null,
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "Iwamoto05",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SM8b-185-holo-standard",
       "cardId": "SM8b-185",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "ã‚¾ãƒ­ã‚¢",
-      "set": "GXã‚¦ãƒ«ãƒˆãƒ©ã‚·ãƒ£ã‚¤ãƒ‹ãƒ¼",
+      "name": "ゾロア",
+      "set": "GXウルトラシャイニー",
       "setId": "SM8b",
       "number": "185",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Ultra Rare",
       "variant": "holo",
       "foil": null,
       "image": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png",
       "imageHigh": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png",
-      "imageLanguage": "JaponÃªs (referÃªncia visual)",
+      "imageLanguage": "Japonês (referência visual)",
       "illustrator": "Saya Tsuruta",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-M2a-111-reverse-energy-standard",
       "cardId": "M2a-111",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "Nã®ã‚¾ãƒ­ã‚¢",
-      "set": "MEGAãƒ‰ãƒªãƒ¼ãƒ ex",
+      "name": "Nのゾロア",
+      "set": "MEGAドリームex",
       "setId": "M2a",
       "number": "111",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
-      "variant": "reverse Â· foil energy",
+      "language": "Japonês",
+      "rarity": "Não informada",
+      "variant": "reverse · foil energy",
       "foil": "energy",
       "image": "https://assets.tcgdex.net/pt/sv/sv09/097/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv09/097/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Jiro Sasumo",
       "releaseDate": null,
-      "extraReason": "Foil energy exclusivo da ediÃ§Ã£o japonesa"
+      "extraReason": "Foil energy exclusivo da edição japonesa"
     },
     {
       "id": "ja-M2a-111-reverse-pokeball-standard",
       "cardId": "M2a-111",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "Nã®ã‚¾ãƒ­ã‚¢",
-      "set": "MEGAãƒ‰ãƒªãƒ¼ãƒ ex",
+      "name": "Nのゾロア",
+      "set": "MEGAドリームex",
       "setId": "M2a",
       "number": "111",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
-      "variant": "reverse Â· foil pokeball",
+      "language": "Japonês",
+      "rarity": "Não informada",
+      "variant": "reverse · foil pokeball",
       "foil": "pokeball",
       "image": "https://assets.tcgdex.net/pt/sv/sv09/097/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv09/097/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Jiro Sasumo",
       "releaseDate": null,
-      "extraReason": "Foil pokeball exclusivo da ediÃ§Ã£o japonesa"
+      "extraReason": "Foil pokeball exclusivo da edição japonesa"
     },
     {
       "id": "ja-SV-P-200-normal-standard",
       "cardId": "SV-P-200",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "Nã®ã‚¾ãƒ­ã‚¢",
-      "set": "ã‚¹ã‚«ãƒ¼ãƒ¬ãƒƒãƒˆ&ãƒã‚¤ã‚ªãƒ¬ãƒƒãƒˆ ãƒ—ãƒ­ãƒ¢ã‚«ãƒ¼ãƒ‰",
+      "name": "Nのゾロア",
+      "set": "スカーレット&バイオレット プロモカード",
       "setId": "SV-P",
       "number": "200",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Promo",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv09/097/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv09/097/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "Jiro Sasumo",
       "releaseDate": null,
-      "extraReason": "Raridade diferente da versÃ£o em portuguÃªs"
+      "extraReason": "Raridade diferente da versão em português"
     },
     {
       "id": "ja-S10a-029-normal-standard",
       "cardId": "S10a-029",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロア",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "029",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/029/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/029/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Akira Komayama",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-S10a-029-reverse-standard",
       "cardId": "S10a-029",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "ãƒ’ã‚¹ã‚¤ ã‚¾ãƒ­ã‚¢",
-      "set": "ãƒ€ãƒ¼ã‚¯ãƒ•ã‚¡ãƒ³ã‚¿ã‚ºãƒž",
+      "name": "ヒスイ ゾロア",
+      "set": "ダークファンタズマ",
       "setId": "S10a",
       "number": "029",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
       "variant": "reverse",
       "foil": null,
       "image": "https://assets.tcgdex.net/ja/S/S10a/029/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/S/S10a/029/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Akira Komayama",
       "releaseDate": null,
-      "extraReason": "Sem versÃ£o equivalente em portuguÃªs"
+      "extraReason": "Sem versão equivalente em português"
     },
     {
       "id": "ja-SV8a-096-reverse-masterball-standard",
       "cardId": "SV8a-096",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "ã‚¾ãƒ­ã‚¢",
-      "set": "ãƒ†ãƒ©ã‚¹ã‚¿ãƒ«ãƒ•ã‚§ã‚¹ex",
+      "name": "ゾロア",
+      "set": "テラスタルフェスex",
       "setId": "SV8a",
       "number": "096",
-      "language": "JaponÃªs",
-      "rarity": "NÃ£o informada",
-      "variant": "reverse Â· foil masterball",
+      "language": "Japonês",
+      "rarity": "Não informada",
+      "variant": "reverse · foil masterball",
       "foil": "masterball",
       "image": "https://assets.tcgdex.net/ja/SV/SV8a/096/low.webp",
       "imageHigh": "https://assets.tcgdex.net/ja/SV/SV8a/096/high.webp",
-      "imageLanguage": "JaponÃªs",
+      "imageLanguage": "Japonês",
       "illustrator": "Yuu Nishida",
       "releaseDate": null,
-      "extraReason": "Foil masterball exclusivo da ediÃ§Ã£o japonesa"
+      "extraReason": "Foil masterball exclusivo da edição japonesa"
     },
     {
       "id": "ja-SV11W-058-reverse-masterball-standard",
       "cardId": "SV11W-058",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "ã‚¾ãƒ­ã‚¢",
-      "set": "ãƒ›ãƒ¯ã‚¤ãƒˆãƒ•ãƒ¬ã‚¢",
+      "name": "ゾロア",
+      "set": "ホワイトフレア",
       "setId": "SV11W",
       "number": "058",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
-      "variant": "reverse Â· foil masterball",
+      "variant": "reverse · foil masterball",
       "foil": "masterball",
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "akagi",
       "releaseDate": null,
-      "extraReason": "Foil masterball exclusivo da ediÃ§Ã£o japonesa"
+      "extraReason": "Foil masterball exclusivo da edição japonesa"
     },
     {
       "id": "ja-SV11W-058-reverse-pokeball-standard",
       "cardId": "SV11W-058",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
-      "name": "ã‚¾ãƒ­ã‚¢",
-      "set": "ãƒ›ãƒ¯ã‚¤ãƒˆãƒ•ãƒ¬ã‚¢",
+      "name": "ゾロア",
+      "set": "ホワイトフレア",
       "setId": "SV11W",
       "number": "058",
-      "language": "JaponÃªs",
+      "language": "Japonês",
       "rarity": "Common",
-      "variant": "reverse Â· foil pokeball",
+      "variant": "reverse · foil pokeball",
       "foil": "pokeball",
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/high.webp",
-      "imageLanguage": "PT-BR (referÃªncia visual)",
+      "imageLanguage": "PT-BR (referência visual)",
       "illustrator": "akagi",
       "releaseDate": null,
-      "extraReason": "Foil pokeball exclusivo da ediÃ§Ã£o japonesa"
+      "extraReason": "Foil pokeball exclusivo da edição japonesa"
     },
     {
-      "id": "pt-swsh9-121-Holo-PadrÃ£o",
+      "id": "pt-swsh9-121-Holo-Padrão",
       "cardId": "swsh9-121",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2818,7 +2594,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh9-121-Reverse-PadrÃ£o",
+      "id": "pt-swsh9-121-Reverse-Padrão",
       "cardId": "swsh9-121",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2838,7 +2614,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy5-118-normal-PadrÃ£o",
+      "id": "pt-xy5-118-normal-Padrão",
       "cardId": "xy5-118",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2858,12 +2634,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw6-107-normal-PadrÃ£o",
+      "id": "pt-bw6-107-normal-Padrão",
       "cardId": "bw6-107",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
       "name": "Bibarel",
-      "set": "DragÃµes Enaltecidos",
+      "set": "Dragões Enaltecidos",
       "setId": "bw6",
       "number": "107",
       "language": "PT-BR",
@@ -2878,7 +2654,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swshp-SWSH188-normal-PadrÃ£o",
+      "id": "pt-swshp-SWSH188-normal-Padrão",
       "cardId": "swshp-SWSH188",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2892,18 +2668,18 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH188.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH188_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": null,
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swsh10.5-060-Normal-PadrÃ£o",
+      "id": "pt-swsh10.5-060-Normal-Padrão",
       "cardId": "swsh10.5-060",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
       "name": "Bibarel",
-      "set": "PokÃ©mon GO",
+      "set": "Pokémon GO",
       "setId": "swsh10.5",
       "number": "060",
       "language": "PT-BR",
@@ -2918,12 +2694,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10.5-060-Reverse-PadrÃ£o",
+      "id": "pt-swsh10.5-060-Reverse-Padrão",
       "cardId": "swsh10.5-060",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
       "name": "Bibarel",
-      "set": "PokÃ©mon GO",
+      "set": "Pokémon GO",
       "setId": "swsh10.5",
       "number": "060",
       "language": "PT-BR",
@@ -2938,7 +2714,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh12.5gg-GG25-Holo-PadrÃ£o",
+      "id": "pt-swsh12.5gg-GG25-Holo-Padrão",
       "cardId": "swsh12.5gg-GG25",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2952,13 +2728,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swsh12pt5gg/GG25.png",
       "imageHigh": "https://images.pokemontcg.io/swsh12pt5gg/GG25_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Amelicart",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sm11-172-normal-PadrÃ£o",
+      "id": "pt-sm11-172-normal-Padrão",
       "cardId": "sm11-172",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2978,7 +2754,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy1-107-normal-PadrÃ£o",
+      "id": "pt-xy1-107-normal-Padrão",
       "cardId": "xy1-107",
       "pokemon": "bibarel",
       "pokemonLabel": "Bibarel",
@@ -2998,7 +2774,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh9-120-Normal-PadrÃ£o",
+      "id": "pt-swsh9-120-Normal-Padrão",
       "cardId": "swsh9-120",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3018,7 +2794,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh9-120-Reverse-PadrÃ£o",
+      "id": "pt-swsh9-120-Reverse-Padrão",
       "cardId": "swsh9-120",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3038,7 +2814,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy5-116-normal-PadrÃ£o",
+      "id": "pt-xy5-116-normal-Padrão",
       "cardId": "xy5-116",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3058,7 +2834,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy5-117-normal-PadrÃ£o",
+      "id": "pt-xy5-117-normal-Padrão",
       "cardId": "xy5-117",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3078,7 +2854,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy0-29-normal-PadrÃ£o",
+      "id": "pt-xy0-29-normal-Padrão",
       "cardId": "xy0-29",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3087,7 +2863,7 @@
       "setId": "xy0",
       "number": "29",
       "language": "PT-BR",
-      "rarity": "NÃ£o informada",
+      "rarity": "Não informada",
       "variant": "normal",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/xy/xy0/29/low.webp",
@@ -3098,12 +2874,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw6-106-normal-PadrÃ£o",
+      "id": "pt-bw6-106-normal-Padrão",
       "cardId": "bw6-106",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
       "name": "Bidoof",
-      "set": "DragÃµes Enaltecidos",
+      "set": "Dragões Enaltecidos",
       "setId": "bw6",
       "number": "106",
       "language": "PT-BR",
@@ -3118,12 +2894,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10.5-059-Normal-PadrÃ£o",
+      "id": "pt-swsh10.5-059-Normal-Padrão",
       "cardId": "swsh10.5-059",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
       "name": "Bidoof",
-      "set": "PokÃ©mon GO",
+      "set": "Pokémon GO",
       "setId": "swsh10.5",
       "number": "059",
       "language": "PT-BR",
@@ -3138,12 +2914,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10.5-059-Reverse-PadrÃ£o",
+      "id": "pt-swsh10.5-059-Reverse-Padrão",
       "cardId": "swsh10.5-059",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
       "name": "Bidoof",
-      "set": "PokÃ©mon GO",
+      "set": "Pokémon GO",
       "setId": "swsh10.5",
       "number": "059",
       "language": "PT-BR",
@@ -3158,17 +2934,17 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10.5-059-Reverse-Ditto destacÃ¡vel-PadrÃ£o",
+      "id": "pt-swsh10.5-059-Reverse-Ditto destacável-Padrão",
       "cardId": "swsh10.5-059",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
       "name": "Bidoof",
-      "set": "PokÃ©mon GO",
+      "set": "Pokémon GO",
       "setId": "swsh10.5",
       "number": "059",
       "language": "PT-BR",
       "rarity": "Comum",
-      "variant": "Reverse Â· Ditto destacÃ¡vel",
+      "variant": "Reverse · Ditto destacável",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/swsh/swsh10.5/059/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh10.5/059/high.webp",
@@ -3178,7 +2954,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh12.5-111-Normal-PadrÃ£o",
+      "id": "pt-swsh12.5-111-Normal-Padrão",
       "cardId": "swsh12.5-111",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3198,7 +2974,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh12.5-111-Reverse-PadrÃ£o",
+      "id": "pt-swsh12.5-111-Reverse-Padrão",
       "cardId": "swsh12.5-111",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3218,7 +2994,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh12.5gg-GG29-Holo-PadrÃ£o",
+      "id": "pt-swsh12.5gg-GG29-Holo-Padrão",
       "cardId": "swsh12.5gg-GG29",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3232,13 +3008,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swsh12pt5gg/GG29.png",
       "imageHigh": "https://images.pokemontcg.io/swsh12pt5gg/GG29_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Kouki Saitou",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sm11-171-normal-PadrÃ£o",
+      "id": "pt-sm11-171-normal-Padrão",
       "cardId": "sm11-171",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3258,7 +3034,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy1-106-normal-PadrÃ£o",
+      "id": "pt-xy1-106-normal-Padrão",
       "cardId": "xy1-106",
       "pokemon": "bidoof",
       "pokemonLabel": "Bidoof",
@@ -3278,7 +3054,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5-7-Normal-PadrÃ£o",
+      "id": "pt-swsh4.5-7-Normal-Padrão",
       "cardId": "swsh4.5-7",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3298,7 +3074,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5-7-Reverse-PadrÃ£o",
+      "id": "pt-swsh4.5-7-Reverse-Padrão",
       "cardId": "swsh4.5-7",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3318,7 +3094,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5sv-SV002-Holo-PadrÃ£o",
+      "id": "pt-swsh4.5sv-SV002-Holo-Padrão",
       "cardId": "swsh4.5sv-SV002",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3332,18 +3108,18 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swsh45sv/SV002.png",
       "imageHigh": "https://images.pokemontcg.io/swsh45sv/SV002_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Masakazu Fukuda",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sm12-19-normal-PadrÃ£o",
+      "id": "pt-sm12-19-normal-Padrão",
       "cardId": "sm12-19",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "Eclipse CÃ³smico",
+      "set": "Eclipse Cósmico",
       "setId": "sm12",
       "number": "19",
       "language": "PT-BR",
@@ -3358,12 +3134,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-011-Normal-PadrÃ£o",
+      "id": "pt-me03-011-Normal-Padrão",
       "cardId": "me03-011",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "011",
       "language": "PT-BR",
@@ -3378,12 +3154,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-011-Reverse-PadrÃ£o",
+      "id": "pt-me03-011-Reverse-Padrão",
       "cardId": "me03-011",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "011",
       "language": "PT-BR",
@@ -3398,12 +3174,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh3-12-Normal-PadrÃ£o",
+      "id": "pt-swsh3-12-Normal-Padrão",
       "cardId": "swsh3-12",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "EscuridÃ£o Incandescente",
+      "set": "Escuridão Incandescente",
       "setId": "swsh3",
       "number": "12",
       "language": "PT-BR",
@@ -3418,12 +3194,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh3-12-Reverse-PadrÃ£o",
+      "id": "pt-swsh3-12-Reverse-Padrão",
       "cardId": "swsh3-12",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "EscuridÃ£o Incandescente",
+      "set": "Escuridão Incandescente",
       "setId": "swsh3",
       "number": "12",
       "language": "PT-BR",
@@ -3438,7 +3214,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-020-Normal-PadrÃ£o",
+      "id": "pt-swsh10-020-Normal-Padrão",
       "cardId": "swsh10-020",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3458,7 +3234,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-020-Reverse-PadrÃ£o",
+      "id": "pt-swsh10-020-Reverse-Padrão",
       "cardId": "swsh10-020",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3478,12 +3254,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-004-Normal-PadrÃ£o",
+      "id": "pt-sv06.5-004-Normal-Padrão",
       "cardId": "sv06.5-004",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "004",
       "language": "PT-BR",
@@ -3498,12 +3274,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-004-Reverse-PadrÃ£o",
+      "id": "pt-sv06.5-004-Reverse-Padrão",
       "cardId": "sv06.5-004",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
       "name": "Dartrix",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "004",
       "language": "PT-BR",
@@ -3518,7 +3294,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv03-014-Holo-Cosmos-PadrÃ£o",
+      "id": "pt-sv03-014-Holo-Cosmos-Padrão",
       "cardId": "sv03-014",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3528,7 +3304,7 @@
       "number": "014",
       "language": "PT-BR",
       "rarity": "Incomum",
-      "variant": "Holo Â· foil Cosmos",
+      "variant": "Holo · foil Cosmos",
       "foil": "Cosmos",
       "image": "https://assets.tcgdex.net/pt/sv/sv03/014/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv03/014/high.webp",
@@ -3538,7 +3314,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv03-014-Normal-PadrÃ£o",
+      "id": "pt-sv03-014-Normal-Padrão",
       "cardId": "sv03-014",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3558,7 +3334,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv03-014-Reverse-PadrÃ£o",
+      "id": "pt-sv03-014-Reverse-Padrão",
       "cardId": "sv03-014",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3578,7 +3354,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm1-10-normal-PadrÃ£o",
+      "id": "pt-sm1-10-normal-Padrão",
       "cardId": "sm1-10",
       "pokemon": "dartrix",
       "pokemonLabel": "Dartrix",
@@ -3598,7 +3374,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5-8-Holo-PadrÃ£o",
+      "id": "pt-swsh4.5-8-Holo-Padrão",
       "cardId": "swsh4.5-8",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3618,7 +3394,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5-8-Reverse-PadrÃ£o",
+      "id": "pt-swsh4.5-8-Reverse-Padrão",
       "cardId": "swsh4.5-8",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3638,7 +3414,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5sv-SV003-Holo-PadrÃ£o",
+      "id": "pt-swsh4.5sv-SV003-Holo-Padrão",
       "cardId": "swsh4.5sv-SV003",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3652,18 +3428,18 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swsh45sv/SV003.png",
       "imageHigh": "https://images.pokemontcg.io/swsh45sv/SV003_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "nagimiso",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sm12-20-normal-PadrÃ£o",
+      "id": "pt-sm12-20-normal-Padrão",
       "cardId": "sm12-20",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye",
-      "set": "Eclipse CÃ³smico",
+      "set": "Eclipse Cósmico",
       "setId": "sm12",
       "number": "20",
       "language": "PT-BR",
@@ -3678,12 +3454,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-012-Holo-PadrÃ£o",
+      "id": "pt-me03-012-Holo-Padrão",
       "cardId": "me03-012",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye ex",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "012",
       "language": "PT-BR",
@@ -3698,17 +3474,17 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-012-Holo-PadrÃ£o-player-rewards-program",
+      "id": "pt-me03-012-Holo-Padrão-player-rewards-program",
       "cardId": "me03-012",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye ex",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "012",
       "language": "PT-BR",
       "rarity": "Rara Dupla",
-      "variant": "Holo Â· selo player-rewards-program",
+      "variant": "Holo · selo player-rewards-program",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/me/me03/012/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/me/me03/012/high.webp",
@@ -3718,12 +3494,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-100-Holo-PadrÃ£o",
+      "id": "pt-me03-100-Holo-Padrão",
       "cardId": "me03-100",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye ex",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "100",
       "language": "PT-BR",
@@ -3738,12 +3514,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh3-13-Holo-PadrÃ£o",
+      "id": "pt-swsh3-13-Holo-Padrão",
       "cardId": "swsh3-13",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye",
-      "set": "EscuridÃ£o Incandescente",
+      "set": "Escuridão Incandescente",
       "setId": "swsh3",
       "number": "13",
       "language": "PT-BR",
@@ -3758,12 +3534,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh3-13-Reverse-PadrÃ£o",
+      "id": "pt-swsh3-13-Reverse-Padrão",
       "cardId": "swsh3-13",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye",
-      "set": "EscuridÃ£o Incandescente",
+      "set": "Escuridão Incandescente",
       "setId": "swsh3",
       "number": "13",
       "language": "PT-BR",
@@ -3778,7 +3554,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swshp-SWSH035-holo-PadrÃ£o",
+      "id": "pt-swshp-SWSH035-holo-Padrão",
       "cardId": "swshp-SWSH035",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3792,13 +3568,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH035.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH035_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Souichirou Gunjima",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swshp-SWSH238-normal-PadrÃ£o",
+      "id": "pt-swshp-SWSH238-normal-Padrão",
       "cardId": "swshp-SWSH238",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3812,13 +3588,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH238.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH238_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": null,
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-082-Holo-PadrÃ£o",
+      "id": "pt-swsh10-082-Holo-Padrão",
       "cardId": "swsh10-082",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3838,7 +3614,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-082-Reverse-PadrÃ£o",
+      "id": "pt-swsh10-082-Reverse-Padrão",
       "cardId": "swsh10-082",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3858,7 +3634,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-083-Holo-PadrÃ£o",
+      "id": "pt-swsh10-083-Holo-Padrão",
       "cardId": "swsh10-083",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3878,7 +3654,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-084-Holo-PadrÃ£o",
+      "id": "pt-swsh10-084-Holo-Padrão",
       "cardId": "swsh10-084",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3898,7 +3674,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-084-Holo-PadrÃ£o-Logo da coleÃ§Ã£o",
+      "id": "pt-swsh10-084-Holo-Padrão-Logo da coleção",
       "cardId": "swsh10-084",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3908,7 +3684,7 @@
       "number": "084",
       "language": "PT-BR",
       "rarity": "Rara Holo VSTAR",
-      "variant": "Holo Â· selo Logo da coleÃ§Ã£o",
+      "variant": "Holo · selo Logo da coleção",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/swsh/swsh10/084/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh10/084/high.webp",
@@ -3918,7 +3694,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-173-Holo-PadrÃ£o",
+      "id": "pt-swsh10-173-Holo-Padrão",
       "cardId": "swsh10-173",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3938,7 +3714,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-195-Holo-Rainbow-PadrÃ£o",
+      "id": "pt-swsh10-195-Holo-Rainbow-Padrão",
       "cardId": "swsh10-195",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -3948,7 +3724,7 @@
       "number": "195",
       "language": "PT-BR",
       "rarity": "Rare Secreta",
-      "variant": "Holo Â· foil Rainbow",
+      "variant": "Holo · foil Rainbow",
       "foil": "Rainbow",
       "image": "https://assets.tcgdex.net/pt/swsh/swsh10/195/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh10/195/high.webp",
@@ -3958,12 +3734,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-005-Normal-PadrÃ£o",
+      "id": "pt-sv06.5-005-Normal-Padrão",
       "cardId": "sv06.5-005",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "005",
       "language": "PT-BR",
@@ -3978,12 +3754,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-005-Reverse-PadrÃ£o",
+      "id": "pt-sv06.5-005-Reverse-Padrão",
       "cardId": "sv06.5-005",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "005",
       "language": "PT-BR",
@@ -3998,12 +3774,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm2-146-normal-PadrÃ£o",
+      "id": "pt-sm2-146-normal-Padrão",
       "cardId": "sm2-146",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
       "name": "Decidueye GX",
-      "set": "GuardiÃµes Ascendentes",
+      "set": "Guardiões Ascendentes",
       "setId": "sm2",
       "number": "146",
       "language": "PT-BR",
@@ -4018,7 +3794,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv03-015-Holo-PadrÃ£o",
+      "id": "pt-sv03-015-Holo-Padrão",
       "cardId": "sv03-015",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -4048,7 +3824,7 @@
       "number": "015",
       "language": "PT-BR",
       "rarity": "Rara Dupla",
-      "variant": "Holo Â· jumbo",
+      "variant": "Holo · jumbo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv03/015/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv03/015/high.webp",
@@ -4058,7 +3834,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm1-11-normal-PadrÃ£o",
+      "id": "pt-sm1-11-normal-Padrão",
       "cardId": "sm1-11",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -4078,7 +3854,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm1-12-normal-PadrÃ£o",
+      "id": "pt-sm1-12-normal-Padrão",
       "cardId": "sm1-12",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -4098,7 +3874,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM37-normal-PadrÃ£o",
+      "id": "pt-smp-SM37-normal-Padrão",
       "cardId": "smp-SM37",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -4112,13 +3888,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM37.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM37_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM55-normal-PadrÃ£o",
+      "id": "pt-smp-SM55-normal-Padrão",
       "cardId": "smp-SM55",
       "pokemon": "decidueye",
       "pokemonLabel": "Decidueye",
@@ -4132,13 +3908,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM55.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM55_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Kouki Saitou",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5-6-Normal-PadrÃ£o",
+      "id": "pt-swsh4.5-6-Normal-Padrão",
       "cardId": "swsh4.5-6",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4158,7 +3934,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5-6-Reverse-PadrÃ£o",
+      "id": "pt-swsh4.5-6-Reverse-Padrão",
       "cardId": "swsh4.5-6",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4178,7 +3954,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh4.5sv-SV001-Holo-PadrÃ£o",
+      "id": "pt-swsh4.5sv-SV001-Holo-Padrão",
       "cardId": "swsh4.5sv-SV001",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4192,18 +3968,18 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swsh45sv/SV001.png",
       "imageHigh": "https://images.pokemontcg.io/swsh45sv/SV001_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Akira Komayama",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sm12-17-normal-PadrÃ£o",
+      "id": "pt-sm12-17-normal-Padrão",
       "cardId": "sm12-17",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "Eclipse CÃ³smico",
+      "set": "Eclipse Cósmico",
       "setId": "sm12",
       "number": "17",
       "language": "PT-BR",
@@ -4218,12 +3994,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm12-18-normal-PadrÃ£o",
+      "id": "pt-sm12-18-normal-Padrão",
       "cardId": "sm12-18",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "Eclipse CÃ³smico",
+      "set": "Eclipse Cósmico",
       "setId": "sm12",
       "number": "18",
       "language": "PT-BR",
@@ -4238,12 +4014,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-010-Normal-PadrÃ£o",
+      "id": "pt-me03-010-Normal-Padrão",
       "cardId": "me03-010",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "010",
       "language": "PT-BR",
@@ -4258,12 +4034,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-010-Reverse-PadrÃ£o",
+      "id": "pt-me03-010-Reverse-Padrão",
       "cardId": "me03-010",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "010",
       "language": "PT-BR",
@@ -4278,16 +4054,16 @@
       "extraReason": null
     },
     {
-      "id": "pt-me03-090-Holo-PadrÃ£o",
+      "id": "pt-me03-090-Holo-Padrão",
       "cardId": "me03-090",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "EquilÃ­brio Perfeito",
+      "set": "Equilíbrio Perfeito",
       "setId": "me03",
       "number": "090",
       "language": "PT-BR",
-      "rarity": "IlustraÃ§Ã£o Rara",
+      "rarity": "Ilustração Rara",
       "variant": "Holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/me/me03/090/low.webp",
@@ -4298,12 +4074,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh3-11-Normal-PadrÃ£o",
+      "id": "pt-swsh3-11-Normal-Padrão",
       "cardId": "swsh3-11",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "EscuridÃ£o Incandescente",
+      "set": "Escuridão Incandescente",
       "setId": "swsh3",
       "number": "11",
       "language": "PT-BR",
@@ -4318,12 +4094,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh3-11-Reverse-PadrÃ£o",
+      "id": "pt-swsh3-11-Reverse-Padrão",
       "cardId": "swsh3-11",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "EscuridÃ£o Incandescente",
+      "set": "Escuridão Incandescente",
       "setId": "swsh3",
       "number": "11",
       "language": "PT-BR",
@@ -4338,7 +4114,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swshp-SWSH220-normal-PadrÃ£o",
+      "id": "pt-swshp-SWSH220-normal-Padrão",
       "cardId": "swshp-SWSH220",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4352,13 +4128,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH220.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH220_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": null,
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-019-Normal-PadrÃ£o",
+      "id": "pt-swsh10-019-Normal-Padrão",
       "cardId": "swsh10-019",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4378,7 +4154,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh10-019-Reverse-PadrÃ£o",
+      "id": "pt-swsh10-019-Reverse-Padrão",
       "cardId": "swsh10-019",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4398,12 +4174,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-003-Normal-PadrÃ£o",
+      "id": "pt-sv06.5-003-Normal-Padrão",
       "cardId": "sv06.5-003",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "003",
       "language": "PT-BR",
@@ -4418,12 +4194,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-003-Reverse-PadrÃ£o",
+      "id": "pt-sv06.5-003-Reverse-Padrão",
       "cardId": "sv06.5-003",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
       "name": "Rowlet",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "003",
       "language": "PT-BR",
@@ -4438,7 +4214,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-mep-043-Holo-PadrÃ£o",
+      "id": "pt-mep-043-Holo-Padrão",
       "cardId": "mep-043",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4452,13 +4228,13 @@
       "foil": null,
       "image": "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png",
       "imageHigh": "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Saboteri",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sv03-013-Holo-Cosmos-PadrÃ£o",
+      "id": "pt-sv03-013-Holo-Cosmos-Padrão",
       "cardId": "sv03-013",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4468,7 +4244,7 @@
       "number": "013",
       "language": "PT-BR",
       "rarity": "Comum",
-      "variant": "Holo Â· foil Cosmos",
+      "variant": "Holo · foil Cosmos",
       "foil": "Cosmos",
       "image": "https://assets.tcgdex.net/pt/sv/sv03/013/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv03/013/high.webp",
@@ -4478,7 +4254,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv03-013-Normal-PadrÃ£o",
+      "id": "pt-sv03-013-Normal-Padrão",
       "cardId": "sv03-013",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4498,7 +4274,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv03-013-Reverse-PadrÃ£o",
+      "id": "pt-sv03-013-Reverse-Padrão",
       "cardId": "sv03-013",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4518,7 +4294,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm11-1-normal-PadrÃ£o",
+      "id": "pt-sm11-1-normal-Padrão",
       "cardId": "sm11-1",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4538,7 +4314,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm11-214-normal-PadrÃ£o",
+      "id": "pt-sm11-214-normal-Padrão",
       "cardId": "sm11-214",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4558,7 +4334,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm11-215-normal-PadrÃ£o",
+      "id": "pt-sm11-215-normal-Padrão",
       "cardId": "sm11-215",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4578,7 +4354,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm11-237-normal-PadrÃ£o",
+      "id": "pt-sm11-237-normal-Padrão",
       "cardId": "sm11-237",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4598,7 +4374,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm1-9-normal-PadrÃ£o",
+      "id": "pt-sm1-9-normal-Padrão",
       "cardId": "sm1-9",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4618,7 +4394,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM01-normal-PadrÃ£o",
+      "id": "pt-smp-SM01-normal-Padrão",
       "cardId": "smp-SM01",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4632,13 +4408,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM01.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM01_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Mitsuhiro Arita",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM22-normal-PadrÃ£o",
+      "id": "pt-smp-SM22-normal-Padrão",
       "cardId": "smp-SM22",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4652,13 +4428,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM22.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM22_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM153-normal-PadrÃ£o",
+      "id": "pt-smp-SM153-normal-Padrão",
       "cardId": "smp-SM153",
       "pokemon": "rowlet",
       "pokemonLabel": "Rowlet",
@@ -4672,13 +4448,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM153.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM153_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Masakazu Fukuda",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sv09-098-Holo-PadrÃ£o",
+      "id": "pt-sv09-098-Holo-Padrão",
       "cardId": "sv09-098",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4698,7 +4474,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv09-098-Holo-PadrÃ£o-liga-master-ball",
+      "id": "pt-sv09-098-Holo-Padrão-liga-master-ball",
       "cardId": "sv09-098",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4708,7 +4484,7 @@
       "number": "098",
       "language": "PT-BR",
       "rarity": "Rara Dupla",
-      "variant": "Holo Â· selo liga-master-ball",
+      "variant": "Holo · selo liga-master-ball",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv09/098/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv09/098/high.webp",
@@ -4718,7 +4494,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv09-098-Holo-PadrÃ£o-player-rewards-program",
+      "id": "pt-sv09-098-Holo-Padrão-player-rewards-program",
       "cardId": "sv09-098",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4728,7 +4504,7 @@
       "number": "098",
       "language": "PT-BR",
       "rarity": "Rara Dupla",
-      "variant": "Holo Â· selo player-rewards-program",
+      "variant": "Holo · selo player-rewards-program",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv09/098/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv09/098/high.webp",
@@ -4738,7 +4514,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv09-175-Holo-PadrÃ£o",
+      "id": "pt-sv09-175-Holo-Padrão",
       "cardId": "sv09-175",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4758,7 +4534,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv09-185-Holo-PadrÃ£o",
+      "id": "pt-sv09-185-Holo-Padrão",
       "cardId": "sv09-185",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4767,7 +4543,7 @@
       "setId": "sv09",
       "number": "185",
       "language": "PT-BR",
-      "rarity": "IlustraÃ§Ã£o Rara Especial",
+      "rarity": "Ilustração Rara Especial",
       "variant": "Holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv09/185/low.webp",
@@ -4778,7 +4554,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv09-189-Holo-Ouro-PadrÃ£o",
+      "id": "pt-sv09-189-Holo-Ouro-Padrão",
       "cardId": "sv09-189",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4788,7 +4564,7 @@
       "number": "189",
       "language": "PT-BR",
       "rarity": "Hiper rara",
-      "variant": "Holo Â· foil Ouro",
+      "variant": "Holo · foil Ouro",
       "foil": "Ouro",
       "image": "https://assets.tcgdex.net/pt/sv/sv09/189/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv09/189/high.webp",
@@ -4798,7 +4574,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw1-71-normal-PadrÃ£o",
+      "id": "pt-bw1-71-normal-Padrão",
       "cardId": "bw1-71",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -4818,12 +4594,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh7-103-Holo-PadrÃ£o",
+      "id": "pt-swsh7-103-Holo-Padrão",
       "cardId": "swsh7-103",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "CÃ©us em EvoluÃ§Ã£o",
+      "set": "Céus em Evolução",
       "setId": "swsh7",
       "number": "103",
       "language": "PT-BR",
@@ -4838,12 +4614,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh7-103-Reverse-PadrÃ£o",
+      "id": "pt-swsh7-103-Reverse-Padrão",
       "cardId": "swsh7-103",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "CÃ©us em EvoluÃ§Ã£o",
+      "set": "Céus em Evolução",
       "setId": "swsh7",
       "number": "103",
       "language": "PT-BR",
@@ -4858,12 +4634,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm10-107-normal-PadrÃ£o",
+      "id": "pt-sm10-107-normal-Padrão",
       "cardId": "sm10-107",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Greninja e Zoroark GX",
-      "set": "Elos InquebrÃ¡veis",
+      "set": "Elos Inquebráveis",
       "setId": "sm10",
       "number": "107",
       "language": "PT-BR",
@@ -4878,12 +4654,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm10-200-normal-PadrÃ£o",
+      "id": "pt-sm10-200-normal-Padrão",
       "cardId": "sm10-200",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Greninja e Zoroark GX",
-      "set": "Elos InquebrÃ¡veis",
+      "set": "Elos Inquebráveis",
       "setId": "sm10",
       "number": "200",
       "language": "PT-BR",
@@ -4898,12 +4674,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm10-201-normal-PadrÃ£o",
+      "id": "pt-sm10-201-normal-Padrão",
       "cardId": "sm10-201",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Greninja e Zoroark GX",
-      "set": "Elos InquebrÃ¡veis",
+      "set": "Elos Inquebráveis",
       "setId": "sm10",
       "number": "201",
       "language": "PT-BR",
@@ -4918,12 +4694,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm10-222-normal-PadrÃ£o",
+      "id": "pt-sm10-222-normal-Padrão",
       "cardId": "sm10-222",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Greninja e Zoroark GX",
-      "set": "Elos InquebrÃ¡veis",
+      "set": "Elos Inquebráveis",
       "setId": "sm10",
       "number": "222",
       "language": "PT-BR",
@@ -4938,12 +4714,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw5-71-normal-PadrÃ£o",
+      "id": "pt-bw5-71-normal-Padrão",
       "cardId": "bw5-71",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "Exploradores da EscuridÃ£o",
+      "set": "Exploradores da Escuridão",
       "setId": "bw5",
       "number": "71",
       "language": "PT-BR",
@@ -4958,12 +4734,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-032-Holo-PadrÃ£o",
+      "id": "pt-sv06.5-032-Holo-Padrão",
       "cardId": "sv06.5-032",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "032",
       "language": "PT-BR",
@@ -4978,12 +4754,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-032-Reverse-PadrÃ£o",
+      "id": "pt-sv06.5-032-Reverse-Padrão",
       "cardId": "sv06.5-032",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "032",
       "language": "PT-BR",
@@ -4998,7 +4774,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-062-Holo-PadrÃ£o",
+      "id": "pt-sv10.5w-062-Holo-Padrão",
       "cardId": "sv10.5w-062",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5018,7 +4794,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-062-Holo-PadrÃ£o-Logo da coleÃ§Ã£o",
+      "id": "pt-sv10.5w-062-Holo-Padrão-Logo da coleção",
       "cardId": "sv10.5w-062",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5028,7 +4804,7 @@
       "number": "062",
       "language": "PT-BR",
       "rarity": "Rara",
-      "variant": "Holo Â· selo Logo da coleÃ§Ã£o",
+      "variant": "Holo · selo Logo da coleção",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/062/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/062/high.webp",
@@ -5038,7 +4814,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-062-Reverse-Master Bola-PadrÃ£o",
+      "id": "pt-sv10.5w-062-Reverse-Master Bola-Padrão",
       "cardId": "sv10.5w-062",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5048,7 +4824,7 @@
       "number": "062",
       "language": "PT-BR",
       "rarity": "Rara",
-      "variant": "Reverse Â· foil Master Bola",
+      "variant": "Reverse · foil Master Bola",
       "foil": "Master Bola",
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/062/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/062/high.webp",
@@ -5058,7 +4834,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-062-Reverse-PokÃ© Bola-PadrÃ£o",
+      "id": "pt-sv10.5w-062-Reverse-Poké Bola-Padrão",
       "cardId": "sv10.5w-062",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5068,8 +4844,8 @@
       "number": "062",
       "language": "PT-BR",
       "rarity": "Rara",
-      "variant": "Reverse Â· foil PokÃ© Bola",
-      "foil": "PokÃ© Bola",
+      "variant": "Reverse · foil Poké Bola",
+      "foil": "Poké Bola",
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/062/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/062/high.webp",
       "imageLanguage": "PT-BR",
@@ -5078,7 +4854,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-143-Holo-PadrÃ£o",
+      "id": "pt-sv10.5w-143-Holo-Padrão",
       "cardId": "sv10.5w-143",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5087,7 +4863,7 @@
       "setId": "sv10.5w",
       "number": "143",
       "language": "PT-BR",
-      "rarity": "IlustraÃ§Ã£o Rara",
+      "rarity": "Ilustração Rara",
       "variant": "Holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/143/low.webp",
@@ -5098,12 +4874,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh8-171-Normal-PadrÃ£o",
+      "id": "pt-swsh8-171-Normal-Padrão",
       "cardId": "swsh8-171",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "Golpe FusÃ£o",
+      "set": "Golpe Fusão",
       "setId": "swsh8",
       "number": "171",
       "language": "PT-BR",
@@ -5118,12 +4894,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh8-171-Reverse-PadrÃ£o",
+      "id": "pt-swsh8-171-Reverse-Padrão",
       "cardId": "swsh8-171",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "Golpe FusÃ£o",
+      "set": "Golpe Fusão",
       "setId": "swsh8",
       "number": "171",
       "language": "PT-BR",
@@ -5138,12 +4914,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me02.5-137-Holo-PadrÃ£o",
+      "id": "pt-me02.5-137-Holo-Padrão",
       "cardId": "me02.5-137",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark ex do N",
-      "set": "HerÃ³is Excelsos",
+      "set": "Heróis Excelsos",
       "setId": "me02.5",
       "number": "137",
       "language": "PT-BR",
@@ -5158,16 +4934,16 @@
       "extraReason": null
     },
     {
-      "id": "pt-me02.5-286-Holo-PadrÃ£o",
+      "id": "pt-me02.5-286-Holo-Padrão",
       "cardId": "me02.5-286",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark ex do N",
-      "set": "HerÃ³is Excelsos",
+      "set": "Heróis Excelsos",
       "setId": "me02.5",
       "number": "286",
       "language": "PT-BR",
-      "rarity": "IlustraÃ§Ã£o Rara Especial",
+      "rarity": "Ilustração Rara Especial",
       "variant": "Holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/me/me02.5/286/low.webp",
@@ -5178,7 +4954,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm3.5-53-normal-PadrÃ£o",
+      "id": "pt-sm3.5-53-normal-Padrão",
       "cardId": "sm3.5-53",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5198,7 +4974,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm3.5-77-normal-PadrÃ£o",
+      "id": "pt-sm3.5-77-normal-Padrão",
       "cardId": "sm3.5-77",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5218,7 +4994,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw2-67-normal-PadrÃ£o",
+      "id": "pt-bw2-67-normal-Padrão",
       "cardId": "bw2-67",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5238,12 +5014,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw4-102-normal-PadrÃ£o",
+      "id": "pt-bw4-102-normal-Padrão",
       "cardId": "bw4-102",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "PrÃ³ximos Destinos",
+      "set": "Próximos Destinos",
       "setId": "bw4",
       "number": "102",
       "language": "PT-BR",
@@ -5258,7 +5034,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM84-normal-PadrÃ£o",
+      "id": "pt-smp-SM84-normal-Padrão",
       "cardId": "smp-SM84",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5272,13 +5048,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM84.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM84_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "5ban Graphics",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM89-normal-PadrÃ£o",
+      "id": "pt-smp-SM89-normal-Padrão",
       "cardId": "smp-SM89",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5292,18 +5068,18 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM89.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM89_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Misa Tsutsui",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-xy8-91-normal-PadrÃ£o",
+      "id": "pt-xy8-91-normal-Padrão",
       "cardId": "xy8-91",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "Turbo RevoluÃ§Ã£o",
+      "set": "Turbo Revolução",
       "setId": "xy8",
       "number": "91",
       "language": "PT-BR",
@@ -5318,12 +5094,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy8-92-normal-PadrÃ£o",
+      "id": "pt-xy8-92-normal-Padrão",
       "cardId": "xy8-92",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark TURBO",
-      "set": "Turbo RevoluÃ§Ã£o",
+      "set": "Turbo Revolução",
       "setId": "xy8",
       "number": "92",
       "language": "PT-BR",
@@ -5338,12 +5114,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm9-91-normal-PadrÃ£o",
+      "id": "pt-sm9-91-normal-Padrão",
       "cardId": "sm9-91",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
       "name": "Zoroark",
-      "set": "UniÃ£o de Aliados",
+      "set": "União de Aliados",
       "setId": "sm9",
       "number": "91",
       "language": "PT-BR",
@@ -5358,7 +5134,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy1-73-normal-PadrÃ£o",
+      "id": "pt-xy1-73-normal-Padrão",
       "cardId": "xy1-73",
       "pokemon": "zoroark",
       "pokemonLabel": "Zoroark",
@@ -5378,7 +5154,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swshp-SWSH297-normal-PadrÃ£o",
+      "id": "pt-swshp-SWSH297-normal-Padrão",
       "cardId": "swshp-SWSH297",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5392,13 +5168,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH297.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH297_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": null,
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swshp-SWSH298-normal-PadrÃ£o",
+      "id": "pt-swshp-SWSH298-normal-Padrão",
       "cardId": "swshp-SWSH298",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5412,13 +5188,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swshp/SWSH298.png",
       "imageHigh": "https://images.pokemontcg.io/swshp/SWSH298_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": null,
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-076-Holo-PadrÃ£o",
+      "id": "pt-swsh11-076-Holo-Padrão",
       "cardId": "swsh11-076",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5438,7 +5214,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-076-Holo-PadrÃ£o-EB Games",
+      "id": "pt-swsh11-076-Holo-Padrão-EB Games",
       "cardId": "swsh11-076",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5448,7 +5224,7 @@
       "number": "076",
       "language": "PT-BR",
       "rarity": "Rara Holo",
-      "variant": "Holo Â· selo EB Games",
+      "variant": "Holo · selo EB Games",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/swsh/swsh11/076/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh11/076/high.webp",
@@ -5458,7 +5234,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-076-Holo-PadrÃ£o-GameStop",
+      "id": "pt-swsh11-076-Holo-Padrão-GameStop",
       "cardId": "swsh11-076",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5468,7 +5244,7 @@
       "number": "076",
       "language": "PT-BR",
       "rarity": "Rara Holo",
-      "variant": "Holo Â· selo GameStop",
+      "variant": "Holo · selo GameStop",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/swsh/swsh11/076/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh11/076/high.webp",
@@ -5478,7 +5254,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-076-Normal-PadrÃ£o-Logo da coleÃ§Ã£o",
+      "id": "pt-swsh11-076-Normal-Padrão-Logo da coleção",
       "cardId": "swsh11-076",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5488,7 +5264,7 @@
       "number": "076",
       "language": "PT-BR",
       "rarity": "Rara Holo",
-      "variant": "Normal Â· selo Logo da coleÃ§Ã£o",
+      "variant": "Normal · selo Logo da coleção",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/swsh/swsh11/076/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh11/076/high.webp",
@@ -5498,7 +5274,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-076-Reverse-PadrÃ£o",
+      "id": "pt-swsh11-076-Reverse-Padrão",
       "cardId": "swsh11-076",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5518,7 +5294,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-146-Holo-PadrÃ£o",
+      "id": "pt-swsh11-146-Holo-Padrão",
       "cardId": "swsh11-146",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5538,7 +5314,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-147-Holo-PadrÃ£o",
+      "id": "pt-swsh11-147-Holo-Padrão",
       "cardId": "swsh11-147",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5558,7 +5334,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-203-Holo-Rainbow-PadrÃ£o",
+      "id": "pt-swsh11-203-Holo-Rainbow-Padrão",
       "cardId": "swsh11-203",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5568,7 +5344,7 @@
       "number": "203",
       "language": "PT-BR",
       "rarity": "Rare Secreta",
-      "variant": "Holo Â· foil Rainbow",
+      "variant": "Holo · foil Rainbow",
       "foil": "Rainbow",
       "image": "https://assets.tcgdex.net/pt/swsh/swsh11/203/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh11/203/high.webp",
@@ -5578,7 +5354,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-213-Holo-Ouro-PadrÃ£o",
+      "id": "pt-swsh11-213-Holo-Ouro-Padrão",
       "cardId": "swsh11-213",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5588,7 +5364,7 @@
       "number": "213",
       "language": "PT-BR",
       "rarity": "Rare Secreta",
-      "variant": "Holo Â· foil Ouro",
+      "variant": "Holo · foil Ouro",
       "foil": "Ouro",
       "image": "https://assets.tcgdex.net/pt/swsh/swsh11/213/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/swsh/swsh11/213/high.webp",
@@ -5598,7 +5374,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh12.5gg-GG56-Holo-PadrÃ£o",
+      "id": "pt-swsh12.5gg-GG56-Holo-Padrão",
       "cardId": "swsh12.5gg-GG56",
       "pokemon": "zoroark-hisui",
       "pokemonLabel": "Zoroark de Hisui",
@@ -5612,13 +5388,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/swsh12pt5gg/GG56.png",
       "imageHigh": "https://images.pokemontcg.io/swsh12pt5gg/GG56_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "SIE NANAHARA",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-sv09-097-Normal-PadrÃ£o",
+      "id": "pt-sv09-097-Normal-Padrão",
       "cardId": "sv09-097",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5638,7 +5414,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv09-097-Reverse-PadrÃ£o",
+      "id": "pt-sv09-097-Reverse-Padrão",
       "cardId": "sv09-097",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5658,7 +5434,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw1-70-normal-PadrÃ£o",
+      "id": "pt-bw1-70-normal-Padrão",
       "cardId": "bw1-70",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5678,12 +5454,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh7-102-Normal-PadrÃ£o",
+      "id": "pt-swsh7-102-Normal-Padrão",
       "cardId": "swsh7-102",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "CÃ©us em EvoluÃ§Ã£o",
+      "set": "Céus em Evolução",
       "setId": "swsh7",
       "number": "102",
       "language": "PT-BR",
@@ -5698,12 +5474,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh7-102-Reverse-PadrÃ£o",
+      "id": "pt-swsh7-102-Reverse-Padrão",
       "cardId": "swsh7-102",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "CÃ©us em EvoluÃ§Ã£o",
+      "set": "Céus em Evolução",
       "setId": "swsh7",
       "number": "102",
       "language": "PT-BR",
@@ -5718,12 +5494,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw5-69-normal-PadrÃ£o",
+      "id": "pt-bw5-69-normal-Padrão",
       "cardId": "bw5-69",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "Exploradores da EscuridÃ£o",
+      "set": "Exploradores da Escuridão",
       "setId": "bw5",
       "number": "69",
       "language": "PT-BR",
@@ -5738,12 +5514,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw5-70-normal-PadrÃ£o",
+      "id": "pt-bw5-70-normal-Padrão",
       "cardId": "bw5-70",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "Exploradores da EscuridÃ£o",
+      "set": "Exploradores da Escuridão",
       "setId": "bw5",
       "number": "70",
       "language": "PT-BR",
@@ -5758,12 +5534,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-031-Normal-PadrÃ£o",
+      "id": "pt-sv06.5-031-Normal-Padrão",
       "cardId": "sv06.5-031",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "031",
       "language": "PT-BR",
@@ -5778,12 +5554,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-031-Reverse-PadrÃ£o",
+      "id": "pt-sv06.5-031-Reverse-Padrão",
       "cardId": "sv06.5-031",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "031",
       "language": "PT-BR",
@@ -5798,16 +5574,16 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv06.5-075-Holo-PadrÃ£o",
+      "id": "pt-sv06.5-075-Holo-Padrão",
       "cardId": "sv06.5-075",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "FÃ¡bulas Nebulosas",
+      "set": "Fábulas Nebulosas",
       "setId": "sv06.5",
       "number": "075",
       "language": "PT-BR",
-      "rarity": "IlustraÃ§Ã£o Rara",
+      "rarity": "Ilustração Rara",
       "variant": "Holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv06.5/075/low.webp",
@@ -5818,7 +5594,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-061-Normal-PadrÃ£o",
+      "id": "pt-sv10.5w-061-Normal-Padrão",
       "cardId": "sv10.5w-061",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5838,7 +5614,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-061-Reverse-PadrÃ£o",
+      "id": "pt-sv10.5w-061-Reverse-Padrão",
       "cardId": "sv10.5w-061",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5858,7 +5634,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-061-Reverse-Master Bola-PadrÃ£o",
+      "id": "pt-sv10.5w-061-Reverse-Master Bola-Padrão",
       "cardId": "sv10.5w-061",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5868,7 +5644,7 @@
       "number": "061",
       "language": "PT-BR",
       "rarity": "Comum",
-      "variant": "Reverse Â· foil Master Bola",
+      "variant": "Reverse · foil Master Bola",
       "foil": "Master Bola",
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/high.webp",
@@ -5878,7 +5654,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-061-Reverse-PokÃ© Bola-PadrÃ£o",
+      "id": "pt-sv10.5w-061-Reverse-Poké Bola-Padrão",
       "cardId": "sv10.5w-061",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5888,8 +5664,8 @@
       "number": "061",
       "language": "PT-BR",
       "rarity": "Comum",
-      "variant": "Reverse Â· foil PokÃ© Bola",
-      "foil": "PokÃ© Bola",
+      "variant": "Reverse · foil Poké Bola",
+      "foil": "Poké Bola",
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/sv/sv10.5w/061/high.webp",
       "imageLanguage": "PT-BR",
@@ -5898,7 +5674,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sv10.5w-142-Holo-PadrÃ£o",
+      "id": "pt-sv10.5w-142-Holo-Padrão",
       "cardId": "sv10.5w-142",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -5907,7 +5683,7 @@
       "setId": "sv10.5w",
       "number": "142",
       "language": "PT-BR",
-      "rarity": "IlustraÃ§Ã£o Rara",
+      "rarity": "Ilustração Rara",
       "variant": "Holo",
       "foil": null,
       "image": "https://assets.tcgdex.net/pt/sv/sv10.5w/142/low.webp",
@@ -5918,12 +5694,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh8-170-Normal-PadrÃ£o",
+      "id": "pt-swsh8-170-Normal-Padrão",
       "cardId": "swsh8-170",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "Golpe FusÃ£o",
+      "set": "Golpe Fusão",
       "setId": "swsh8",
       "number": "170",
       "language": "PT-BR",
@@ -5938,12 +5714,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh8-170-Reverse-PadrÃ£o",
+      "id": "pt-swsh8-170-Reverse-Padrão",
       "cardId": "swsh8-170",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "Golpe FusÃ£o",
+      "set": "Golpe Fusão",
       "setId": "swsh8",
       "number": "170",
       "language": "PT-BR",
@@ -5958,12 +5734,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-me02.5-136-Normal-PadrÃ£o",
+      "id": "pt-me02.5-136-Normal-Padrão",
       "cardId": "me02.5-136",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua do N",
-      "set": "HerÃ³is Excelsos",
+      "set": "Heróis Excelsos",
       "setId": "me02.5",
       "number": "136",
       "language": "PT-BR",
@@ -5978,17 +5754,17 @@
       "extraReason": null
     },
     {
-      "id": "pt-me02.5-136-Reverse-Energia-PadrÃ£o",
+      "id": "pt-me02.5-136-Reverse-Energia-Padrão",
       "cardId": "me02.5-136",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua do N",
-      "set": "HerÃ³is Excelsos",
+      "set": "Heróis Excelsos",
       "setId": "me02.5",
       "number": "136",
       "language": "PT-BR",
       "rarity": "Comum",
-      "variant": "Reverse Â· foil Energia",
+      "variant": "Reverse · foil Energia",
       "foil": "Energia",
       "image": "https://assets.tcgdex.net/pt/me/me02.5/136/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/me/me02.5/136/high.webp",
@@ -5998,18 +5774,18 @@
       "extraReason": null
     },
     {
-      "id": "pt-me02.5-136-Reverse-PokÃ© Bola-PadrÃ£o",
+      "id": "pt-me02.5-136-Reverse-Poké Bola-Padrão",
       "cardId": "me02.5-136",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua do N",
-      "set": "HerÃ³is Excelsos",
+      "set": "Heróis Excelsos",
       "setId": "me02.5",
       "number": "136",
       "language": "PT-BR",
       "rarity": "Comum",
-      "variant": "Reverse Â· foil PokÃ© Bola",
-      "foil": "PokÃ© Bola",
+      "variant": "Reverse · foil Poké Bola",
+      "foil": "Poké Bola",
       "image": "https://assets.tcgdex.net/pt/me/me02.5/136/low.webp",
       "imageHigh": "https://assets.tcgdex.net/pt/me/me02.5/136/high.webp",
       "imageLanguage": "PT-BR",
@@ -6018,7 +5794,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm3.5-52-normal-PadrÃ£o",
+      "id": "pt-sm3.5-52-normal-Padrão",
       "cardId": "sm3.5-52",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -6038,7 +5814,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-bw2-66-normal-PadrÃ£o",
+      "id": "pt-bw2-66-normal-Padrão",
       "cardId": "bw2-66",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -6058,7 +5834,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-smp-SM83-normal-PadrÃ£o",
+      "id": "pt-smp-SM83-normal-Padrão",
       "cardId": "smp-SM83",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -6072,13 +5848,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/smp/SM83.png",
       "imageHigh": "https://images.pokemontcg.io/smp/SM83_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "kodama",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-svp-189-Holo-PadrÃ£o",
+      "id": "pt-svp-189-Holo-Padrão",
       "cardId": "svp-189",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -6092,13 +5868,13 @@
       "foil": null,
       "image": "https://images.pokemontcg.io/svp/189.png",
       "imageHigh": "https://images.pokemontcg.io/svp/189_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Megumi Mizutani",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-svp-189-Holo-PadrÃ£o-PokÃ©mon Center",
+      "id": "pt-svp-189-Holo-Padrão-Pokémon Center",
       "cardId": "svp-189",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -6108,22 +5884,22 @@
       "number": "189",
       "language": "PT-BR",
       "rarity": "Promo",
-      "variant": "Holo Â· selo PokÃ©mon Center",
+      "variant": "Holo · selo Pokémon Center",
       "foil": null,
       "image": "https://images.pokemontcg.io/svp/189.png",
       "imageHigh": "https://images.pokemontcg.io/svp/189_hires.png",
-      "imageLanguage": "InglÃªs (referÃªncia visual)",
+      "imageLanguage": "Inglês (referência visual)",
       "illustrator": "Megumi Mizutani",
       "releaseDate": null,
       "extraReason": null
     },
     {
-      "id": "pt-xy8-89-normal-PadrÃ£o",
+      "id": "pt-xy8-89-normal-Padrão",
       "cardId": "xy8-89",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "Turbo RevoluÃ§Ã£o",
+      "set": "Turbo Revolução",
       "setId": "xy8",
       "number": "89",
       "language": "PT-BR",
@@ -6138,12 +5914,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy8-90-normal-PadrÃ£o",
+      "id": "pt-xy8-90-normal-Padrão",
       "cardId": "xy8-90",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "Turbo RevoluÃ§Ã£o",
+      "set": "Turbo Revolução",
       "setId": "xy8",
       "number": "90",
       "language": "PT-BR",
@@ -6158,12 +5934,12 @@
       "extraReason": null
     },
     {
-      "id": "pt-sm9-90-normal-PadrÃ£o",
+      "id": "pt-sm9-90-normal-Padrão",
       "cardId": "sm9-90",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
       "name": "Zorua",
-      "set": "UniÃ£o de Aliados",
+      "set": "União de Aliados",
       "setId": "sm9",
       "number": "90",
       "language": "PT-BR",
@@ -6178,7 +5954,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-xy1-72-normal-PadrÃ£o",
+      "id": "pt-xy1-72-normal-Padrão",
       "cardId": "xy1-72",
       "pokemon": "zorua",
       "pokemonLabel": "Zorua",
@@ -6198,7 +5974,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-075-Normal-PadrÃ£o",
+      "id": "pt-swsh11-075-Normal-Padrão",
       "cardId": "swsh11-075",
       "pokemon": "zorua-hisui",
       "pokemonLabel": "Zorua de Hisui",
@@ -6218,7 +5994,7 @@
       "extraReason": null
     },
     {
-      "id": "pt-swsh11-075-Reverse-PadrÃ£o",
+      "id": "pt-swsh11-075-Reverse-Padrão",
       "cardId": "swsh11-075",
       "pokemon": "zorua-hisui",
       "pokemonLabel": "Zorua de Hisui",
@@ -6239,4 +6015,3 @@
     }
   ]
 }
-

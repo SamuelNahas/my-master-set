@@ -4,16 +4,36 @@ const API = "https://api.tcgdex.net/v2";
 const POKEMON_TCG_API = "https://api.pokemontcg.io/v2";
 const generatedAt = new Date().toISOString();
 
+const pkmnCardsSupplementals = [
+  {
+    id: "tk7a-12",
+    name: "Bidoof",
+    supertype: "Pokémon",
+    hp: "60",
+    artist: "Kagemaru Himeno",
+    rarity: "No Rarity",
+    number: "12",
+    attacks: [{ cost: ["Colorless", "Colorless"], damage: "40" }],
+    abilities: [],
+    set: { id: "tk7a", name: "XY Trainer Kit—Bisharp", releaseDate: "2014/11/01" },
+    images: {
+      small: "https://pkmncards.com/wp-content/uploads/en_US-TK7A-012-bidoof.png",
+      large: "https://pkmncards.com/wp-content/uploads/en_US-TK7A-012-bidoof.png",
+    },
+    sourcePage: "https://pkmncards.com/card/bidoof-xy-trainer-kit-bisharp-tk7a-12/",
+  },
+];
+
 const species = [
-  { id: "zorua", label: "Zorua", pt: /zorua/i, en: /zorua/i, ja: /ã‚¾ãƒ­ã‚¢/, dex: 570 },
-  { id: "zoroark", label: "Zoroark", pt: /zoroark/i, en: /zoroark/i, ja: /ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/, dex: 571 },
-  { id: "zorua-hisui", label: "Zorua de Hisui", pt: /zorua de hisui/i, en: /hisuian zorua/i, ja: /ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢/, dex: 570, hisui: true },
-  { id: "zoroark-hisui", label: "Zoroark de Hisui", pt: /zoroark de hisui/i, en: /hisuian zoroark/i, ja: /ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/, dex: 571, hisui: true },
-  { id: "rowlet", label: "Rowlet", pt: /rowlet/i, en: /rowlet/i, ja: /ãƒ¢ã‚¯ãƒ­ãƒ¼/, dex: 722 },
-  { id: "dartrix", label: "Dartrix", pt: /dartrix/i, en: /dartrix/i, ja: /ãƒ•ã‚¯ã‚¹ãƒ­ãƒ¼/, dex: 723 },
-  { id: "decidueye", label: "Decidueye", pt: /decidueye/i, en: /decidueye/i, ja: /ã‚¸ãƒ¥ãƒŠã‚¤ãƒ‘ãƒ¼/, dex: 724 },
-  { id: "bidoof", label: "Bidoof", pt: /bidoof/i, en: /bidoof/i, ja: /ãƒ“ãƒƒãƒ‘/, dex: 399 },
-  { id: "bibarel", label: "Bibarel", pt: /bibarel/i, en: /bibarel/i, ja: /ãƒ“ãƒ¼ãƒ€ãƒ«/, dex: 400 },
+  { id: "zorua", label: "Zorua", pt: /zorua/i, en: /zorua/i, ja: /ゾロア/, dex: 570 },
+  { id: "zoroark", label: "Zoroark", pt: /zoroark/i, en: /zoroark/i, ja: /ゾロアーク/, dex: 571 },
+  { id: "zorua-hisui", label: "Zorua de Hisui", pt: /zorua de hisui/i, en: /hisuian zorua/i, ja: /ヒスイゾロア/, dex: 570, hisui: true },
+  { id: "zoroark-hisui", label: "Zoroark de Hisui", pt: /zoroark de hisui/i, en: /hisuian zoroark/i, ja: /ヒスイゾロアーク/, dex: 571, hisui: true },
+  { id: "rowlet", label: "Rowlet", pt: /rowlet/i, en: /rowlet/i, ja: /モクロー/, dex: 722 },
+  { id: "dartrix", label: "Dartrix", pt: /dartrix/i, en: /dartrix/i, ja: /フクスロー/, dex: 723 },
+  { id: "decidueye", label: "Decidueye", pt: /decidueye/i, en: /decidueye/i, ja: /ジュナイパー/, dex: 724 },
+  { id: "bidoof", label: "Bidoof", pt: /bidoof/i, en: /bidoof/i, ja: /ビッパ/, dex: 399 },
+  { id: "bibarel", label: "Bibarel", pt: /bibarel/i, en: /bibarel/i, ja: /ビーダル/, dex: 400 },
 ];
 
 const rarityAliases = new Map([
@@ -47,10 +67,10 @@ function identifySpecies(card, language) {
     if (hisui) return hisui;
     return species.find((item) => !item.hisui && item[pattern].test(name));
   }
-  if (/ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/.test(name)) return species.find((item) => item.id === "zoroark-hisui");
-  if (/ãƒ’ã‚¹ã‚¤ã‚¾ãƒ­ã‚¢/.test(name)) return species.find((item) => item.id === "zorua-hisui");
-  if (/ã‚¾ãƒ­ã‚¢ãƒ¼ã‚¯/.test(name)) return species.find((item) => item.id === "zoroark");
-  if (/ã‚¾ãƒ­ã‚¢/.test(name)) return species.find((item) => item.id === "zorua");
+  if (/ヒスイゾロアーク/.test(name)) return species.find((item) => item.id === "zoroark-hisui");
+  if (/ヒスイゾロア/.test(name)) return species.find((item) => item.id === "zorua-hisui");
+  if (/ゾロアーク/.test(name)) return species.find((item) => item.id === "zoroark");
+  if (/ゾロア/.test(name)) return species.find((item) => item.id === "zorua");
   return species.find((item) => !item.hisui && item.ja.test(name));
 }
 
@@ -98,7 +118,7 @@ function variantLabel(variant, language) {
   if (variant.foil) parts.push(`foil ${variant.foil}`);
   if (variant.stamp?.length) parts.push(`selo ${variant.stamp.join(", ")}`);
   if (normalizeText(variant.size) === "jumbo") parts.push("jumbo");
-  return parts.join(" Â· ");
+  return parts.join(" · ");
 }
 
 async function getJson(url, retries = 3) {
@@ -141,6 +161,7 @@ async function fetchPokemonTcgCards() {
     const pokemon = identifySpecies(card, "en");
     if (pokemon && normalizeText(card.supertype) === "pokemon") unique.set(card.id, card);
   }
+  for (const card of pkmnCardsSupplementals) unique.set(card.id, card);
   return [...unique.values()];
 }
 
@@ -148,8 +169,10 @@ function normalizePrintingId(id = "") {
   const separator = id.indexOf("-");
   if (separator < 0) return normalizeText(id);
   let setId = id.slice(0, separator).toLowerCase();
-  const localId = id.slice(separator + 1).toLowerCase();
+  const rawLocalId = id.slice(separator + 1).toLowerCase();
+  const localId = /^\d+$/.test(rawLocalId) ? String(Number(rawLocalId)) : rawLocalId;
   setId = setId.replace(/^swsh45/, "swsh4.5").replace(/pt5/g, ".5");
+  if (setId === "pgo") setId = "swsh10.5";
   return `${setId}-${localId}`;
 }
 
@@ -172,26 +195,26 @@ function imageReference(card, language) {
     return {
       low: `${card.image}/low.webp`,
       high: `${card.image}/high.webp`,
-      language: language === "pt" ? "PT-BR" : language === "ja" ? "JaponÃªs" : "InglÃªs",
+      language: language === "pt" ? "PT-BR" : language === "ja" ? "Japonês" : "Inglês",
     };
   }
   if (card.images?.small) {
-    return { low: card.images.small, high: card.images.large ?? card.images.small, language: "InglÃªs" };
+    return { low: card.images.small, high: card.images.large ?? card.images.small, language: "Inglês" };
   }
   return null;
 }
 
 const knownImageFallbacks = new Map([
-  ["pt:mep-043", { low: "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png", high: "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png", language: "InglÃªs" }],
-  ["ja:SM8b-162", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png", language: "JaponÃªs" }],
-  ["ja:SM8b-163", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png", language: "JaponÃªs" }],
-  ["ja:SM8b-185", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png", language: "JaponÃªs" }],
-  ["ja:SM1p-059", { low: "https://images.pokemontcg.io/sm1/146.png", high: "https://images.pokemontcg.io/sm1/146_hires.png", language: "InglÃªs" }],
-  ["ja:SM10b-063", { low: "https://images.pokemontcg.io/sm11/237.png", high: "https://images.pokemontcg.io/sm11/237_hires.png", language: "InglÃªs" }],
-  ["ja:SM9a-066", { low: "https://images.pokemontcg.io/sm10/222.png", high: "https://images.pokemontcg.io/sm10/222_hires.png", language: "InglÃªs" }],
-  ["ja:SM3p-081", { low: "https://images.pokemontcg.io/sm35/77.png", high: "https://images.pokemontcg.io/sm35/77_hires.png", language: "InglÃªs" }],
-  ["ja:SV11W-059", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png", language: "JaponÃªs" }],
-  ["ja:SV11W-141", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png", language: "JaponÃªs" }],
+  ["pt:mep-043", { low: "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png", high: "https://pkmncards.com/wp-content/uploads/mebsp_en_043_std.png", language: "Inglês" }],
+  ["ja:SM8b-162", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_162_R_JP.png", language: "Japonês" }],
+  ["ja:SM8b-163", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_163_R_JP.png", language: "Japonês" }],
+  ["ja:SM8b-185", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SM8b/SM8b_185_R_JP.png", language: "Japonês" }],
+  ["ja:SM1p-059", { low: "https://images.pokemontcg.io/sm1/146.png", high: "https://images.pokemontcg.io/sm1/146_hires.png", language: "Inglês" }],
+  ["ja:SM10b-063", { low: "https://images.pokemontcg.io/sm11/237.png", high: "https://images.pokemontcg.io/sm11/237_hires.png", language: "Inglês" }],
+  ["ja:SM9a-066", { low: "https://images.pokemontcg.io/sm10/222.png", high: "https://images.pokemontcg.io/sm10/222_hires.png", language: "Inglês" }],
+  ["ja:SM3p-081", { low: "https://images.pokemontcg.io/sm35/77.png", high: "https://images.pokemontcg.io/sm35/77_hires.png", language: "Inglês" }],
+  ["ja:SV11W-059", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_59_R_JP_LG.png", language: "Japonês" }],
+  ["ja:SV11W-141", { low: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png", high: "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpc/SV11W/SV11W_141_R_JP.png", language: "Japonês" }],
 ]);
 
 function knownImageFallback(language, card) {
@@ -208,16 +231,16 @@ function baseRecord(card, language, pokemon, variant, extraReason = null, fallba
     pokemon: pokemon.id,
     pokemonLabel: pokemon.label,
     name: card.name,
-    set: card.set?.name ?? "ColeÃ§Ã£o nÃ£o informada",
+    set: card.set?.name ?? "Coleção não informada",
     setId: card.set?.id ?? "",
     number: card.localId ?? "",
-    language: language === "pt" ? "PT-BR" : "JaponÃªs",
-    rarity: card.rarity && card.rarity !== "None" ? card.rarity : "NÃ£o informada",
+    language: language === "pt" ? "PT-BR" : "Japonês",
+    rarity: card.rarity && card.rarity !== "None" ? card.rarity : "Não informada",
     variant: variantLabel(variant, language),
     foil: variant.foil ?? null,
     image: resolvedImage?.low ?? null,
     imageHigh: resolvedImage?.high ?? null,
-    imageLanguage: resolvedImage ? (ownImage ? resolvedImage.language : `${resolvedImage.language} (referÃªncia visual)`) : null,
+    imageLanguage: resolvedImage ? (ownImage ? resolvedImage.language : `${resolvedImage.language} (referência visual)`) : null,
     illustrator: card.illustrator ?? null,
     releaseDate: card.set?.releaseDate ?? null,
     extraReason,
@@ -233,11 +256,11 @@ function internationalRecord(card, pokemon, variant) {
     pokemon: pokemon.id,
     pokemonLabel: pokemon.label,
     name: card.name,
-    set: card.set?.name ?? "ColeÃ§Ã£o nÃ£o informada",
+    set: card.set?.name ?? "Coleção não informada",
     setId: card.set?.id ?? "",
     number: card.number ?? "",
     language: "Internacional",
-    rarity: card.rarity ?? "NÃ£o informada",
+    rarity: card.rarity ?? "Não informada",
     variant: variantLabel(variant, "en"),
     foil: variant.foil ?? null,
     image: image?.low ?? null,
@@ -245,7 +268,8 @@ function internationalRecord(card, pokemon, variant) {
     imageLanguage: image?.language ?? null,
     illustrator: card.artist ?? null,
     releaseDate: card.set?.releaseDate ?? null,
-    sourceNote: "ImpressÃ£o histÃ³rica nÃ£o encontrada na base PT-BR; referÃªncia internacional em inglÃªs.",
+    sourceNote: "Impressão histórica não encontrada na base PT-BR; referência internacional em inglês.",
+    sourcePage: card.sourcePage ?? null,
   };
 }
 
@@ -286,7 +310,7 @@ for (const card of primary) {
   primaryImageByCardId.set(card.cardId, {
     low: card.image,
     high: card.imageHigh,
-    language: (card.imageLanguage ?? "PT-BR").replace(/ \(referÃªncia visual\)$/, ""),
+    language: (card.imageLanguage ?? "PT-BR").replace(/ \(referência visual\)$/, ""),
   });
 }
 
@@ -305,10 +329,10 @@ for (const card of jaCards) {
     const exclusiveFoil = Boolean(variant.foil) && !ptVariantSignatures.has(signature);
     if (!cardIsExclusive && !rarityChanged && !exclusiveFoil) continue;
     const reason = cardIsExclusive
-      ? "Sem versÃ£o equivalente em portuguÃªs"
+      ? "Sem versão equivalente em português"
       : exclusiveFoil
-        ? `Foil ${variant.foil} exclusivo da ediÃ§Ã£o japonesa`
-        : "Raridade diferente da versÃ£o em portuguÃªs";
+        ? `Foil ${variant.foil} exclusivo da edição japonesa`
+        : "Raridade diferente da versão em português";
     const internationalMatch = (internationalByFingerprint.get(mechanicsFingerprint(card, pokemon.id)) ?? []).find((candidate) => candidate.images?.small);
     const portugueseMatch = matches.map((match) => primaryImageByCardId.get(match.id)).find(Boolean);
     const fallbackImage = knownImageFallback("ja", card) ?? (internationalMatch ? imageReference(internationalMatch, "en") : portugueseMatch ?? null);
@@ -335,11 +359,12 @@ const cards = [...primary, ...international, ...extras].sort((a, b) => (
 const catalog = {
   meta: {
     generatedAt,
-    source: "TCGdex + PokÃ©mon TCG API",
+    source: "TCGdex + Pokémon TCG API + PkmnCards",
     sourceUrl: "https://tcgdex.net",
     internationalSourceUrl: "https://pokemontcg.io",
-    primaryLanguage: "PortuguÃªs (base TCGdex pt, exibida como PT-BR)",
-    scope: "PokÃ©mon TCG fÃ­sico; PokÃ©mon TCG Pocket nÃ£o incluÃ­do",
+    supplementalSourceUrl: "https://pkmncards.com",
+    primaryLanguage: "Português (base TCGdex pt, exibida como PT-BR)",
+    scope: "Pokémon TCG físico; Pokémon TCG Pocket não incluído",
     cardPrintings: { portuguese: ptCards.length, internationalChecked: internationalCards.length, japaneseChecked: jaCards.length },
     checklistEntries: { portuguese: primary.length, international: international.length, japaneseExtras: extras.length, total: cards.length },
   },
@@ -352,4 +377,3 @@ const json = `${JSON.stringify(catalog, null, 2)}\n`;
 await writeFile("data/cards.json", json, "utf8");
 
 console.log(JSON.stringify(catalog.meta, null, 2));
-
